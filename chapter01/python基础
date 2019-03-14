@@ -134,3 +134,35 @@ dict
 in判断key是否存在
 d.get('Thomas', value)存在则返回对应的键值,不存在返回None或自定义的value
 注意:返回None时Python的交互环境不显示结果
+d.setdefault(key, value):当key存在时返回d中的value,当key不存在是插入该键值对,返回插入的value
+pop(key)删除一个键,对应的value也会从dict中删除
+dict内部存放顺序和key放入的顺序无关
+和list比较,dict的特点:
+1.查找和插入的速度极快,不会随着key的增加而变慢;
+2.需要占用大量的内存,内存浪费多
+而list相反:
+1.查找和插入的时间随着元素的增加而增加;
+2.占用空间小,浪费内存少
+dict的key必须是不可变对象:如字符串,整数等,list是可变的不能作为key
+
+set
+set和dict类似,也是一组key的集合,但不存储value.由于key不能重复,所以,在set中,没有重复的key.要创建一个set需要提供一个iterable(可迭代类型)作为输入集合:
+s = set{[1, 2, 3]} -> s -> {1, 2, 3}
+重复元素在set中自动被过滤
+add(key):添加元素到set,如果重复则无效果
+remove(key):删除元素,如不存在报KeyError
+s1&s2:交集
+s1|s2:并集
+s1-s2:差集
+set和dict的唯一区别仅在于没有存储对应的value,但是,set的原理和dict一样,所以,同样不可以放入可变对象,因为无法判断两个可变对象是否相等,也就无法保证set内部"不会有重复元素"
+
+不可变对象
+可变对象如list,对list进行操作,list内部的内容发生变化:
+a = ['c', 'b', 'a'] -> a.sort() -> a = ['a', 'b', 'c']
+不可变对象如str,对str操作
+a = 'abc' -> b = a.replace('a', 'A') -> a = 'abc' b = 'Abc'
+对于不变对象来说,调用对象自身的任意方法,也不会改变对象自身的内容.相反,这些方法会创建新的对象并返回.
+
+小结:
+使用key-value存储结构的dict在Python中非常有用,选择不可变对象作为key很重要,最重要的key是字符串.
+tuple虽然是不可变对象,当如(1, [2, 3])可修改其中[2, 3]的元素
