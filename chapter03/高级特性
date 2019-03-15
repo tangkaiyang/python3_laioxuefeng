@@ -1,0 +1,103 @@
+高级特性
+
+切片
+L = ['Michael', 'Sarah', 'Tracy', 'Bob', 'Jack']
+L[0:3] -> ['Michael', 'Sarah', 'Tracy']
+注意:到3为止不包括3
+L[0:3] -> L[:3]
+L[-2:] -> L[3:]
+倒数第一个元素的索引是-1
+
+迭代
+如果给定一个list或tuple,可以通过for循环来遍历这个list或tuple,这种遍历我们称为迭代(Iteration)
+for循环,只要作用与一个可迭代对象(iterable),for循环就可以正常运行
+判断是否是Iterable类型:
+from collections import Iterable
+isinstance('abc', Iterable)
+
+enumerate(枚举)
+for i, value in enumerate(['A', 'B', 'C']):
+    print(i, value)
+0 A
+1 B
+2 C
+for循环中,同时引入两个变量
+for x, y in [(1, 1), (2, 4), (3, 9)]:
+    print(x, y)
+1 1
+2 4
+3 9
+
+列表生成式
+列表生成式即List Comprehensions,
+list(range(1, 11)) -> [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+[x * x for x in range(1, 11)] -> [1, 4, 9, 16, 25, 36, 49, 64, 81, 100]
+for循环后加上if判断,
+[x * x for x in range(1, 11) if x % 2 == 0] -> [4, 16, 36, 64, 100]
+两层循环
+[m + n for m in 'ABC' for n in "XYZ"] -> ['AX', 'AY', 'AZ', 'BX', 'BY', 'BZ', 'CX', 'CY', 'CZ']
+三层及以上很少用到,但也可以
+
+列出当前目录下的所以文件和目录名
+import os
+[d for d in os.listdir('.')]
+for循环可以同时使用两个甚至更多变量,比如dict的items()可以同时迭代key和value
+d = {'x': 'A', 'y': 'B', 'z': 'C'}
+for k, v in d.items():
+    print(k, '=', v)
+列表生成式可以使用两个变量来生成list:
+[ k + '=' + v for k, v in d.items()]
+把一个list中的所有字符串变为小写:
+[s.lower() for s in L]
+
+
+生成器(generator)
+列表生成器的[]改为(),就创建了一个generator
+L = [x * x for x in range(10)] -> [0, 1, 4, 9...]
+g = (x * x for x in range(10)) -> 生成器对象
+通过next()获得generator的下一个返回值,直到StopIteration
+使用for循环遍历,generator也是可迭代对象
+for n in g: -> 0 1 4 ...
+
+注意赋值语句a ,b = b, a+b
+右边其实是一个tuple,
+相当于
+t = (a, a+b)
+a = t[0]
+b = t[1]
+但不必显式写出临时变量t就可以赋值
+函数转为generator
+print(b)转为 yield b
+generator和函数的执行流程不一样.函数是顺序执行,遇到return语句或者最后一行函数语句就返回.
+而变成generator的函数,在每次调用next()的时候执行,遇到yield语句返回,再次执行时从上次返回的yield语句处继续执行
+for循环调用generator时,发现拿不到generator的return语句的返回值.如果想要拿到返回值,必须捕获StopIteration错误,返回值
+包含在StopIteration的value中
+except StopIteration as e:
+    print(e.value)
+
+小结
+generator是非常强大的工具,在Python中,可以简单地把列表生成式改成generator,也可以通过函数实现复杂逻辑的generator.
+要理解generator的工作原理,它是for循环的过程中不断计算出下一个元素,并在适当的条件结束for循环.杜宇函数改成的generator来说,
+遇到return语句或者执行函数体最后一行语句,就是结束generator的指令,for循环随之结束
+普通函数调用直接返回结果,generator函数返回生成器对象
+
+
+迭代器
+可以直接作用与for循环的数据类型有以下几种:
+一类是集合数据类型,如list,tuple,dict,set,str等
+一类是generator,包括生成器和带yield的generator function
+这些可以直接作用于for循环的对象统称为可迭代对象:Iterable
+生成器不但可以作用于for循环,还可以被next()函数不断调用并返回下一个值,知道抛出StopIteration错误表示无法继续返回下一个值了
+可以被next()函数调用并不断返回下一个值的对象称为迭代器:Iterator
+使用isinstance()判断一个对象是否是Iterator对象:
+from collections import Iterator
+生成器都是Iterator对象,但list,dict,str虽然是Iterable,却不是Iterator
+把list,dict,str等Iterable变成Iterator可以使用iter()函数:
+Python的Iterator对象表示的是一个数据流,iterator对象可以被next()函数调用并不断返回下一个数据,直到没有数据时抛出StopIteration
+错误.可以把这个数据流看做是一个有序序列,但我们却不能提前知道序列的长度,只能不断通过next()函数实现按需计算下一个数据,所以Iterator的计算时惰性的,只有在需要返回下一个数据时它才会计算
+Iterator甚至可以表示一个无限大的数据流,例如全体自然数.而使用list是用于不可能存储全体自然数的
+小结:
+凡是可作用于for循环的对象都是Iterable类型
+凡是可作用于next()函数的对象都是Iterator类型,它表示一个惰性计算的序列;
+集合数据类型如list,dict,str等都是Iterable但不是Iterator,不过可以通过iter()函数获得一个Iterator对象
+Python的for循环本质上就是通过不断调用next()函数实现的
