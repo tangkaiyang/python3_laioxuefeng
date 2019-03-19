@@ -42,3 +42,119 @@ class Student():
 小结:
 @property广泛应用在类的定义中,可以让调用者写出简短的代码,同时保证对参数进行必要的检查,这样,程序运行时就减少了出错的可能性
 
+
+多重继承
+继承是面向对象编程的一个重要的方式,因为通过继承,子类就可以扩展父类的功能
+class Bat(Mammal, Flyable): 继承了多个父类
+通过多重继承,一个子类就可以同时获得多个父类的所有功能
+
+MixIn
+在设计类的继承关系时,通常,主线都是单一继承下来的,但是,如果需要混入额外的功能,通过多重继承就可以实现,这种设计模式通常称之为MiXin
+MixIn的目的就是给一个类增加多个功能,这样,在设计类的时候,我们优先考虑通过多重继承来组合多个MixIn的功能,而不是设计多层次的复杂继承关系
+Python自带的很多库也是用了MixIn.Python自带了TCPServer和UDPServer这两类网络服务,而要同时服务多个用户就必须使用多进程或多线程模型,这两种模型有ForKingMixIn和ThreadingMixIn提供.通过组合,我们就可以创造出合适的服务来
+比如,编写一个多进程模式的TCP服务,定义如下:
+    class MyTCPServer(TCPServer, ForkingMixIn):
+        pass
+编写一个多进程模式的UDP服务,定义如下:
+    class MyUDPServer(UDPServer, ThreadingMixIn):
+        pass
+如果打算搞一个更先进的协程模型,可以编写一个CoroutineMixIn:
+    class MyTCPServer(TCPServer, CoroutineMixIn):
+        pass
+这样一来,我们就不需要复杂而庞大的继承链,只要选择组合不同的类的功能,就可以快速构造出所需的子类
+
+小结:
+由于Python允许使用多重继承,因此,MixIn就是一种常见的设计.
+只允许单一继承的语言(如java)不能使用MixIn的设计
+
+
+定制类
+__slots__:
+限制类属性,元组
+__len__():
+作用于len()函数
+__str__():
+作用于返回用户看到的字符串
+__repr__():
+直接显示变量调用,返回程序开发者看到的字符串,为调试服务
+__iter__():
+如果一个类想被用于for...in循环,就必须实现一个__iter__()方法,该方法返回一个迭代对象,for循环会不断调用该迭代对象的__next__()方法拿到循环的下一个值,直到遇到StopIteration错误时推出循环
+__getitem__():
+实现了__iter__()和__next__()方法的类可以用for循环,看起来像list,但是要按下标取出元素需要实现__getitem__()方法,若要实现切片,要判断传入的是整型(f[1])还是切片对象(slice)(f[1:10]),还需对负数和step处理
+此外,如果把对象看成dict,__getitem__()的参数也可能是一个可以作为key的object,如str.
+与之对应的是__setitem__()方法,把对象视作list或dict来对集合赋值,最后,还有__delitem__()方法,用于删除某个元素
+总之,通过上面的方法,我们自己定义的类表现的和python自带的list,tuple,dict没什么区别,这完全归功于动态语言的鸭子类型,不需要强制继承某个接口
+
+__getattr__:
+避免调用不存在的属性报错,动态返回一个属性,
+注意:只有在没有找到属性的情况下,才调用__getattr__,已有的属性,不会在__getattr__中查找
+此外,注意到任意调用如s.abc都会返回None,这是因为定义的__getattr__默认返回就是None.要让class只响应特定的几个属性,就需要抛AttributeError的错误
+这实际上可以把一个类的所有属性和方法全部动态化处理了,不需要任何特殊手段
+这种完全动态调用的特性的实际作用:可以针对完全动态的情况作调用
+例:
+比如很多网站都搞REST API,比如新浪微博,豆瓣啥的,调用API的URL类似:
+http://api.server/user/friends
+http://api.server/user/timeline/list
+如果写SDK,给每个URL对应的API都写一个方法,不实际,如果API一旦改动,SDK也要改.
+利用完全动态的__getattr__,我们可以写一个链式调用:
+class Chain(object):
+    def __init__(self, path=''):
+        self._path = path
+    def __getattr__(self, path):
+        return Chain('%s/%s' % (self._path, path))
+    def __str__(self):
+        return self._path
+    __repr__ = __str__
+这样,无论API怎么变,SDK都可以根据URL实现完全相同的调用,而且,不随API的增加而改变
+还有些REST API会把参数放到URL中,比如GitHub的API:
+GET /users/:user/repos
+调用时,需要把:user替换为实际用户名.
+
+__call__():
+一个对象实例可以由自己的属性和方法,当我们调用实例方法时,我们用instance.method()来调用.
+任何类,只需要定义一个__call__()方法,就可以直接对实例进行调用
+__call__()还可以定义参数.对实例进行直接调用就好比对一个函数进行调用一样,所以你完全可以把对象看成函数,把函数看成对象,因为这两者之间没有根本区别
+如果你把对象看成函数,那么函数本身其实也可以在运行期间动态创建出来,因为类的实例都是运行期创建出来的,这么一来,我们就模糊了对象和函数的界限
+那么,怎么判断一个变量是对象还是函数呢?其实更多时候,我们需要判断一个对象是否能被调用,能被调用的对象就是一个Callable对象,比如函数和我们定义的带__call__()的类实例
+通过callable()函数,我们就可以判断一个对象是否是"可调用"对象
+
+小结:
+Python的class允许定义许多定制方法,可以让我们非常方便地生成特定的类
+
+
+使用枚举类
+定义常量时,通常使用大写变量通过整数来定义:
+如JAN = 1
+好处是简单,缺点是类型是int,并且仍然是变量
+更好的方法是为这样的枚举类型定义一个class类型,然后,每个常量都是class的一个唯一实例.
+Python提供了Enum类来实现这个功能
+from enum import Enum
+Month = Enum('Month', ('Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'))
+这样我们就获得了Month类型的枚举类,可以直接使用Month.Jan来引用一个常量,或者枚举它的所有成员:
+for name, member in Month.__members__.items():
+    print(name, '=>', member, ',', member.value)
+value属性则是自动赋给成员的int常量,默认从1开始计数
+如果需要更精确的控制枚举类型,可以从Enum派生出自定义类:
+from enum import Enum, unique
+@unique
+class Weekday(Enum):
+    Sun = 0
+    Mon = 1
+    ...
+@unique装饰器可以帮助我们检查保证没有重复值
+访问这些枚举类型可以由若干种方法
+day1 = Weekday.Mon
+Weekday['Tue']
+Weekday.Tue.value --> 2
+Weekday(1) --> Weekday.Mon
+Weekday(7) --> ValueError
+for name, member in Weekday.__members__.items():...
+可见,既可以用成员名称引用枚举常量,又可以直接根据value的值获得枚举常量
+
+小结:
+Enum可以把一组相关常量定义在一个class中,且class不可变,而且成员可以直接比较
+
+
+使用元类
+type()
+动态语言和静态语言最大的不同,就是函数和类的定义,不是编译时定义的,而是运行时动态创建的.
