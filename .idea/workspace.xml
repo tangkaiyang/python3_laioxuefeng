@@ -2,10 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="51f49763-80ec-4f41-9f9c-4922f493dd86" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/chapter07/enum_practice.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/chapter07/enum_test.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/chapter07/magic_function.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/chapter07/multi_inherit.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter07/MyORM.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter07/metaclass_test.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter07/type_text.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/chapter07/面向对象高级编程" beforeDir="false" afterPath="$PROJECT_DIR$/chapter07/面向对象高级编程" afterDir="false" />
     </list>
@@ -16,44 +15,7 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/chapter07/面向对象高级编程">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="287">
-              <caret line="146" column="14" lean-forward="true" selection-start-line="146" selection-start-column="14" selection-end-line="146" selection-end-column="14" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/chapter07/enum_test.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="152">
-              <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/chapter07/enum_practice.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="285">
-              <caret line="15" column="33" lean-forward="true" selection-start-line="15" selection-start-column="33" selection-end-line="15" selection-end-column="33" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/chapter07/magic_function.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="377">
-              <caret line="65" column="13" lean-forward="true" selection-start-line="65" selection-start-column="13" selection-end-line="65" selection-end-column="13" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -101,13 +63,16 @@
         <option value="$PROJECT_DIR$/chapter07/magic_function.py" />
         <option value="$PROJECT_DIR$/chapter07/enum_test.py" />
         <option value="$PROJECT_DIR$/chapter07/enum_practice.py" />
+        <option value="$PROJECT_DIR$/chapter07/type_text.py" />
+        <option value="$PROJECT_DIR$/chapter07/metaclass_test.py" />
+        <option value="$PROJECT_DIR$/chapter07/MyORM.py" />
         <option value="$PROJECT_DIR$/chapter07/面向对象高级编程" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="1">
-    <option name="x" value="522" />
-    <option name="y" value="86" />
+    <option name="x" value="520" />
+    <option name="y" value="53" />
     <option name="width" value="1065" />
     <option name="height" value="1018" />
   </component>
@@ -133,7 +98,28 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.enum_practice">
+  <component name="RunManager" selected="Python.MyORM">
+    <configuration name="MyORM" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="python3_laioxuefeng" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/chapter07" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/chapter07/MyORM.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="enum_practice" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="python3_laioxuefeng" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -176,7 +162,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="magic_function" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="metaclass_test" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="python3_laioxuefeng" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -188,7 +174,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/chapter07/magic_function.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/chapter07/metaclass_test.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -197,7 +183,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="multi_inherit" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="type_text" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="python3_laioxuefeng" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -209,28 +195,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/chapter07/multi_inherit.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="property_test" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="python3_laioxuefeng" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/chapter07" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/chapter07/property_test.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/chapter07/type_text.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -241,11 +206,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.MyORM" />
+        <item itemvalue="Python.metaclass_test" />
+        <item itemvalue="Python.type_text" />
         <item itemvalue="Python.enum_practice" />
         <item itemvalue="Python.enum_test" />
-        <item itemvalue="Python.magic_function" />
-        <item itemvalue="Python.multi_inherit" />
-        <item itemvalue="Python.property_test" />
       </list>
     </recent_temporary>
   </component>
@@ -268,8 +233,7 @@
     </history-entry>
   </component>
   <component name="ToolWindowManager">
-    <frame x="522" y="86" width="1065" height="1018" extended-state="1" />
-    <editor active="true" />
+    <frame x="520" y="53" width="1065" height="1018" extended-state="1" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" weight="0.24829601" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -551,17 +515,38 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/chapter07/magic_function.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="377">
-          <caret line="65" column="13" lean-forward="true" selection-start-line="65" selection-start-column="13" selection-end-line="65" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://D:/Python/Python37/Lib/enum.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-1285">
           <caret line="530" column="6" selection-start-line="530" selection-start-column="6" selection-end-line="530" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/chapter07/面向对象高级编程">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="287">
+          <caret line="185" column="22" lean-forward="true" selection-start-line="185" selection-start-column="22" selection-end-line="185" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/chapter07/MyORM.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="491">
+          <caret line="122" column="63" selection-start-line="122" selection-start-column="63" selection-end-line="122" selection-end-column="63" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/chapter07/metaclass_test.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="510">
+          <caret line="32" column="17" selection-start-line="32" selection-start-column="17" selection-end-line="32" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/chapter07/type_text.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="209">
+          <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
         </state>
       </provider>
     </entry>
@@ -579,10 +564,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/chapter07/面向对象高级编程">
+    <entry file="file://$PROJECT_DIR$/chapter07/magic_function.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="287">
-          <caret line="146" column="14" lean-forward="true" selection-start-line="146" selection-start-column="14" selection-end-line="146" selection-end-column="14" />
+        <state relative-caret-position="377">
+          <caret line="65" column="13" lean-forward="true" selection-start-line="65" selection-start-column="13" selection-end-line="65" selection-end-column="13" />
         </state>
       </provider>
     </entry>
