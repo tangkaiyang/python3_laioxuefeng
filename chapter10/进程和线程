@@ -18,3 +18,158 @@ multiprocessing模块提供了一个Process类来代表一个进程对象,下面
 process_test.py
 创建子进程时,只需要传入一个执行函数和函数的参数,创建一个Process实例,用start方法启动,
 join方法可以等待子进程结束后再急促往下运行,通常用于进程间的同步
+
+Pool
+如果启动大量的子进程,那么可以用进程池的方式批量创建子进程
+pool_test.py
+对Pool对象调用join()方法会等待所有子进程执行完毕,调用join()之前必须先调用close(),调用close()之后就不能继续添加新的Process
+请注意输出的结果,task0, 1, 2, 3是立刻执行的,而task4要等待前面某个task完成后才执行,这是因为Pool的默认大小在我的电脑上
+是4,因此,最多执行4个进程.这是Pool有意设计的限制,并不是操作系统的限制
+由于Pool的默认大小是CPU的核数,如果你不幸拥有8核CPU,至少要提交9个子进程才能看到
+
+子进程
+很多时候,子进程并不是自身,而是一个外部进程.我们创建子进程后,还需要控制子进程的输入和输出
+subprocess模块可以让我们非常方便地启动一个子进程,然后控制其输入和输出
+subprocess_test.py
+上述演示了在Python代码中运行命令nslook www.python.org,这和命令行直接运行的效果是一样的
+如果子进程还需要输入,则可以通过communicate()方法输入
+subprocess_test.py
+
+进程间通信
+Process之间肯定时需要通信的,操作系统提供了很多机制来实现进程间的通信.Python的multiprocessing模块包装了底层的机制,提供了Queue,
+Pipes等多种方式来交换数据
+以Queue为例,在父进程中创建两个子进程,一个往Queue里写数据,一个从Queue里读数据:
+queue_test.py
+在Unix/Linux下,multiprocessing模块封装了fork()调用,使我们不需要关注fork()细节.由于Windows没有fork调用,因此,multiprocessing
+需要"模拟"出fork的效果,父进程所有Python对象都必须通过pickle序列化再传到子进程去,所以,如果multiprocessing在Windows下调用失败了
+要先考虑是不是pickle失败了
+
+小结:
+在Unix/Linux下,可以使用fork()调用实现多进程
+要实现跨平台的多进程,可以使用multiprocessing模块
+进程间通信时通过Queue,Pipes等实现的
+
+
+多线程
+多任务可以由多进程完成,也可以由一个进程内的多线程完成.
+进程是由若干个线程组成的,一个进程至少有一个线程.
+由于线程是操作系统直接支持的执行单元,因此,高级语言通常都内置多线程的支持,Python也不例外,并且,Python的线程是真正的Posix Thread,而不是
+模拟出来的线程
+Python的标准库提供了两个模块:_thread和threading,_thread是低级模块,threading是高级模块,对_thread进行了封装.
+绝大多数情况下,我们只需要使用threading这个高级模块
+启动一个线程就是把一个函数传入并创建Thread实例,然后调用start()开始执行:
+thread_test.py
+由于任何进程默认就会启动一个线程,我们把该线程称为主线程,主线程又可以启动新的线程,Python的threading模块有个current_thread()函数,
+它永远返回当前线程的实例.主线程实例的名字叫MainThread,子线程的名字在创建时指定,我们用LoopThread命名子线程.名字仅仅在打印时用来显示,
+完全没有其他意义,如果不起名字Python就会自动给线程命名为Thread-1, Thread-2
+
+Lock
+多线程和多进程最大的不同在于,多进程中,同一个变量,各自有一份拷贝存在每个进程中,互不影响,而多线程中,所有的变量都由所有线程共享,
+所以,任何一个变量都可以被任何一个线程修改,因此,线程之间共享数据最大的危险在于多个线程同时修改一个变量,把内容改乱了
+thread_test.py
+多个线程同时操作一个变量把内容改乱
+我们定义了一个共享变量balance,初始值为0,并且启动两个线程,先存后取,理论上结果应该是0,但是,由于线程的调度是操作系统决定的,当t1,t2
+交替执行时,只要循环次数够多,balance的结果就不一定是0了
+原因是高级语言的一条语句在CPU执行时是若干语句,即使是一个简单的计算:
+balance = balance + n
+也分两步:
+1.计算balance+n,存入临时变量中
+2.将临时变量的值赋给balance
+也就是可以看成:
+x = balance + n
+balance = x
+由于x是局部变量,两个线程各自都有自己的x,当代码正常执行时:
+初始值 balance = 0
+当t1和t2交替运行时,就会出现输出结果有误
+究其原因,是因为修改balance需要多条语句,而执行这几条语句时,线程可能中断,从而导致多个线程把同一个对象的内容改乱了
+两个线程同时一存一取,就可能导致余额不对,所以,我们必须确保一个线程在修改balance的时候,别的线程一定不能改
+如果我们要确保balance计算正确,就要给change_it()上一把锁,当某个线程开始执行change_it()时,我们说,该线程因为获得了锁,因此其他线程
+不能同时执行change_it(),只能等待,知道锁被释放后,获得该锁以后才能改.由于锁只有一只,无论多少个线程,同一时刻最多只有一个线程持有该锁
+,所以不会造成修改的冲突.创建一个锁通过threading.Lock()来实现
+当多个线程同时执行lock.acquire()时,只有一个线程能成功获得锁,然后继续执行代码,其他线程就继续等待到获得锁位置.
+获得锁的线程用完后一定要释放锁,否则那些苦苦等待锁的线程将永远等待下去,称为死线程.所以用try...finally来确保锁一定会被释放
+锁的好处就是确保了某段代码只能由一个线程从头到尾完整地执行,坏处当然也很多,首先是阻止了多线程并发执行,包含锁的某段代码实际上只能
+以单线程模式执行,效率就大大地下降了.其次,由于可以此存在多个锁,不同的线程持有不同的锁,并试图获取对方持有的锁时,可能会造成死锁,导致多个线程
+全部挂起,既不能执行,也无法结束,只能靠操作系统强制终止
+
+
+多核CPU
+
+如果你不幸拥有一个多核CPU,你肯定在想,多核应该可以同时执行多个线程.
+如果写一个死循环的话,会出现什么情况?
+我们可以监控到一个死循环线程会100%占用一个CPU
+如果有两个死循环线程,在多核CPU中,可以监控到会占用200%的CPU,也就是占用两个CPU核心.
+用Python写个死循环:endless_loop.py
+Python不能跑满全部核心:
+因为Python的线程虽然是真正的线程,但是解释器执行代码时,有一个GIL锁:Global Interpreter Lock,任何Python线程执行前,必须先获得
+GIL锁,然后,每执行100条字节码,解释器就自动释放GIL锁,让别的线程有机会执行.这个GIL全局锁实际上把所有线程的执行代码都给锁上了,所以,
+多线程在Python中只能交替执行,即使100个线程跑在100核CPU上,也只能用到1个核.
+GIL是Python解释器设计的历史遗留问题,通常我们用的解释器是官方实现的CPython,要真正利用多核,除非重写一个不带GIL的解释器.
+所以,在Python中,可以使用多线程,但不要指望能有效利用多核.如果一定要通过多线程利用多核,那只能通过C拓展来实现,不过这样就失去了
+Python简单易用的特定.
+不过,也不用担心,Python虽然不能利用多线程实现多核任务,但可以通过多进程实现多核任务.多个Python进程有各自的GIL锁,互不影响
+
+小结:
+多线程编程,模型复杂,容易发生冲突,必须用锁加以隔离,同时,又要小心死锁的发生.
+Python解释器由于设计时有GIL全局锁,导致了多线程无法利用多核.多线程的并发在Python中就是一个美丽的梦
+
+
+ThreadLocal
+在多线程环境下,每个线程都有自己的数据.一个线程使用自己的局部变量比使用全局变量好,因为局部变量只有线程自己能看见,不会影响其他线程
+,而全局变量的修改必须加锁.
+但是局部变量在函数的调用的时候,传递起来很麻烦:
+def process_student(name):
+    std = Student(name)
+    # std是局部变量,但是每个函数都要用它,因此必须传进去:
+    do_task_1(std)
+    do_task_2(std)
+def do_task_1(std):
+    do_subtask_1(std)
+    do_subtask_2(std)
+def do_task_2(std):
+    do_substask_2(std)
+    do_substask_2(std)
+用全局变量也不行,因为每个线程处理不同的Student对象,不能共享
+用一个全局dict存放所有的Student对象,然后以thread自身作为key获得线程对应的Student对象:
+global_dict = {}
+def std_thread(name):
+    std = Student(name)
+    # 把std放到全局变量global_dict中
+    global_dict[threading.current_thread()] = std
+    do_task_1()
+    do_task_2()
+def do_task_1():
+    # 不传入std,而是根据当前的线程查找:
+    std = global_dict[threading.current_thread()]
+    ...
+def do_task_2():
+    # 任何函数都可以查找出当前线程的std变量
+    std = global_dict[threading.current_thread()]
+    ...
+这种方式理论上是可行的,最大的有点是消除了std对象在每层函数中的传递问题,但是获取std的代码有点丑?
+
+ThreadLocal,不用查找dict,
+threadlocal_test.py
+全局变量local_school就是一个ThreadLocal对象,每个Thread对它都可以读写student属性,但互不影响.你可以把local_school看成全局变量,
+但每个属性如local_school.student都是线程的局部变量,可以任意读写而互不干扰,也不用管理锁的问题,ThreadLocal会内部处理.
+可以理解为全局变量local_school是一个dict,不但可以用local_school.student,还可以绑定其他变量,如local_school.teacher等待.
+ThreadLocal最常用的地方就是为每个线程绑定一个数据库连接,HTTP请求,用户身份信息等,这样一个线程的所有调用到的处理函数都可以非常方便地访问这些资源
+
+小结:
+一个ThreadLocal虽然是全局变量,但每个线程都只能读写自己线程的独立副本,互不干扰.ThreadLocal解决了参数在一个线程中各个函数之间互相
+传递的问题
+
+
+进程 vs 线程
+
+线程切换
+计算密集型 vs IO密集型
+异步IO
+对应到Python语言,单线程的异步编程模型称为协程,有了协程的支持,就可以基于时间驱动编写高效的多任务程序
+
+
+分布式进程
+在Thread和Process中,应当优选Process,因为Process更稳定,而且,Process可以分布到多台机器上,而Thread最多只能分布到同一台机器的多个
+CPU上.
+Python的multiprocessing模块不但支持多进程,其中managers子模块还支持把多进程分布到多台机器上.一个服务进程可以作为调度者,将任务分布到
+其他多个进程中,依靠网络通信.
