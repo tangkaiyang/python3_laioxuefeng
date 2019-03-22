@@ -2,17 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="51f49763-80ec-4f41-9f9c-4922f493dd86" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/chapter11/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/chapter11/re_test.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/chapter11/正则表达式" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/chapter12/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/chapter12/chainmap.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/chapter12/collections" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/chapter12/collections_test.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/chapter12/datetime_test.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/chapter12/fifodict.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/chapter12/timezone_shift.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/chapter12/常用内建模块" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter12/base64" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter12/base64_test.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -26,29 +17,26 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/chapter12/常用内建模块">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="422">
-              <caret line="65" selection-start-line="65" selection-end-line="65" />
+            <state relative-caret-position="441">
+              <caret line="66" selection-start-line="66" selection-end-line="66" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/chapter12/collections">
+        <entry file="file://$PROJECT_DIR$/chapter12/base64">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="339">
-              <caret line="71" column="7" lean-forward="true" selection-start-line="71" selection-start-column="7" selection-end-line="71" selection-end-column="7" />
+            <state relative-caret-position="498">
+              <caret line="26" column="52" selection-start-line="26" selection-start-column="52" selection-end-line="26" selection-end-column="52" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/chapter12/chainmap.py">
+        <entry file="file://$PROJECT_DIR$/chapter12/base64_test.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="437">
-              <caret line="23" column="35" selection-start-line="23" selection-start-column="35" selection-end-line="23" selection-end-column="35" />
-              <folding>
-                <element signature="e#25#57#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="380">
+              <caret line="20" column="8" selection-start-line="20" selection-start-column="8" selection-end-line="20" selection-end-column="8" />
             </state>
           </provider>
         </entry>
@@ -69,8 +57,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/chapter07/metaclass_test.py" />
-        <option value="$PROJECT_DIR$/chapter07/MyORM.py" />
         <option value="$PROJECT_DIR$/chapter07/面向对象高级编程" />
         <option value="$PROJECT_DIR$/错误,调试和测试" />
         <option value="$PROJECT_DIR$/chapter08/err_logging.py" />
@@ -120,6 +106,8 @@
         <option value="$PROJECT_DIR$/chapter12/fifodict.py" />
         <option value="$PROJECT_DIR$/chapter12/collections" />
         <option value="$PROJECT_DIR$/chapter12/chainmap.py" />
+        <option value="$PROJECT_DIR$/chapter12/base64" />
+        <option value="$PROJECT_DIR$/chapter12/base64_test.py" />
       </list>
     </option>
   </component>
@@ -179,7 +167,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.chainmap">
+  <component name="RunManager" selected="Python.base64_test">
     <configuration name="python3_laioxuefeng" type="JupiterNotebook" factoryName="Jupyter Notebook">
       <module name="python3_laioxuefeng" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -195,6 +183,27 @@
       <option name="additionalOptions" value="" />
       <option name="ipnbHost" value="127.0.0.1" />
       <option name="ipnbPort" value="8888" />
+      <method v="2" />
+    </configuration>
+    <configuration name="base64_test" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="python3_laioxuefeng" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/chapter12" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/chapter12/base64_test.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
     <configuration name="chainmap" type="PythonConfigurationType" factoryName="Python" temporary="true">
@@ -281,34 +290,13 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="timezone_shift" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="python3_laioxuefeng" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/chapter12" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/chapter12/timezone_shift.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.base64_test" />
         <item itemvalue="Python.chainmap" />
         <item itemvalue="Python.fifodict" />
         <item itemvalue="Python.collections_test" />
         <item itemvalue="Python.datetime_test" />
-        <item itemvalue="Python.timezone_shift" />
       </list>
     </recent_temporary>
   </component>
@@ -368,7 +356,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="863" y="9" width="922" height="1018" extended-state="0" />
-    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" weight="0.24773756" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.2497721" />
@@ -381,7 +368,7 @@
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.3299435" />
       <window_info anchor="bottom" id="Version Control" order="7" weight="0.3299435" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="8" visible="true" weight="0.3299435" />
+      <window_info anchor="bottom" id="Terminal" order="8" weight="0.3299435" />
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
       <window_info anchor="bottom" id="Python Console" order="10" weight="0.19548023" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -416,20 +403,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/chapter08/assert_test.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="152">
-          <caret line="8" column="6" selection-start-line="8" selection-start-column="6" selection-end-line="8" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/chapter08/error_practice.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="38">
-          <caret line="2" column="3" selection-start-line="2" selection-start-column="3" selection-end-line="2" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/chapter08/err_raise.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="247">
@@ -747,13 +720,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/chapter12/常用内建模块">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="422">
-          <caret line="65" selection-start-line="65" selection-end-line="65" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/chapter12/collections.ipynb">
       <provider selected="true" editor-type-id="ipnb-editor">
         <state>
@@ -784,11 +750,32 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/chapter12/chainmap.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="437">
-          <caret line="23" column="35" selection-start-line="23" selection-start-column="35" selection-end-line="23" selection-end-column="35" />
+        <state relative-caret-position="379">
+          <caret line="23" column="37" lean-forward="true" selection-start-line="23" selection-start-column="37" selection-end-line="23" selection-end-column="37" />
           <folding>
             <element signature="e#25#57#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/chapter12/常用内建模块">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="441">
+          <caret line="66" selection-start-line="66" selection-end-line="66" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/chapter12/base64">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="498">
+          <caret line="26" column="52" selection-start-line="26" selection-start-column="52" selection-end-line="26" selection-end-column="52" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/chapter12/base64_test.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="380">
+          <caret line="20" column="8" selection-start-line="20" selection-start-column="8" selection-end-line="20" selection-end-column="8" />
         </state>
       </provider>
     </entry>
