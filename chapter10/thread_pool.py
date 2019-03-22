@@ -15,7 +15,7 @@ close()         等待所有进程结束后,才关闭进程池
 有可用进程为止.在上面的程序中产生了10个进程,但是只能由5个被放入进程池,剩下的都被暂时挂起,并不占用内存空间,等前面的五个进程执行
 完成后,再执行剩下5个进程
 """
-from multiprocessing import Process, Pool
+from multiprocessing import Process, Pool, freeze_support
 import time
 
 def Foo(i):
@@ -25,12 +25,16 @@ def Foo(i):
 def Bar(arg):
     print('-->exec done:', arg)
 
-pool = Pool(5)  # 允许进程池同时放入5个进程
+if __name__ == '__main__':
+    freeze_support()
+    pool = Pool(5)  # 允许进程池同时放入5个进程
 
-for i in range(5):
-    pool.apply_async(func=Foo, args=(i, ), callback=Bar)    # func子进程执行完后,才会执行callback,否则callback不执行(而且callback是由父进程来执行的)
-    pool.apply(func=Foo, args=(i, ))
+    for i in range(5):
+        pool.apply_async(func=Foo, args=(i, ), callback=Bar)    # func子进程执行完后,才会执行callback,否则callback不执行(而且callback是由父进程来执行的)
+        pool.apply(func=Foo, args=(i, ))
 
-print('end')
-pool.close()
-pool.join() # 主进程等待所有子进程执行完毕.必须在close()或terminate()之后
+
+    print('end')
+    pool.close()
+    pool.join() # 主进程等待所有子进程执行完毕.必须在close()或terminate()之后
+

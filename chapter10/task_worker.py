@@ -18,7 +18,7 @@ QueueManager.register('get_result_queue')
 server_addr = '127.0.0.1'
 print('Connect to server %s ...' % server_addr)
 # 端口和验证码注意保持与task_master.py设置的完全一致
-m = QueueManager(address=(server_addr, 5000), authkey=b'abc')
+m = QueueManager(address=(server_addr, 5002), authkey=b'abc')
 # 从网络连接
 m.connect()
 # 获取Queue的对象
