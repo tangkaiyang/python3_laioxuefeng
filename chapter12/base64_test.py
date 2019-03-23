@@ -17,5 +17,11 @@
 请写一个能处理掉=的base64编码函数:
 """
 import base64
+
+
 def safe_base64_decode(s):
-    pass
+    return base64.b64decode(s if len(s)%4==0 else (s+(b"="*(len(s)%4))))
+
+
+print(safe_base64_decode(b"YWJjZA=="))
+print(safe_base64_decode(b"YWJjZA"))
