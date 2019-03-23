@@ -2,12 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="51f49763-80ec-4f41-9f9c-4922f493dd86" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/chapter12/contextlib.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/chapter12/json_python.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/chapter12/proxyhandler_test.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/chapter12/urllib" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/chapter12/urllib_test.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/chapter12/with_test.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter12/XML.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter12/python_xml.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -19,40 +15,19 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/chapter12/urllib">
+        <entry file="file://$PROJECT_DIR$/chapter12/XML.txt">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="301">
-              <caret line="63" lean-forward="true" selection-start-line="63" selection-end-line="63" />
+              <caret line="28" column="21" selection-start-line="28" selection-start-column="21" selection-end-line="28" selection-end-column="21" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/chapter12/json_python.py">
+        <entry file="file://$PROJECT_DIR$/chapter12/python_xml.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="190">
-              <caret line="14" column="21" lean-forward="true" selection-start-line="14" selection-start-column="21" selection-end-line="14" selection-end-column="21" />
-              <folding>
-                <element signature="e#68#95#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/chapter12/proxyhandler_test.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="171">
-              <caret line="9" column="8" lean-forward="true" selection-start-line="9" selection-start-column="8" selection-end-line="9" selection-end-column="8" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/chapter12/urllib_test.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="513">
-              <caret line="24" column="30" lean-forward="true" selection-start-line="24" selection-start-column="30" selection-end-line="24" selection-end-column="30" />
+            <state relative-caret-position="57">
+              <caret line="3" lean-forward="true" selection-start-line="3" selection-start-column="2" selection-end-line="26" selection-end-column="19" />
             </state>
           </provider>
         </entry>
@@ -73,8 +48,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/chapter08/错误,调试和测试" />
-        <option value="$PROJECT_DIR$/chapter08/fact_doc_test.py" />
         <option value="$PROJECT_DIR$/chapter09/write_test.py" />
         <option value="$PROJECT_DIR$/chapter09/os_test.py" />
         <option value="$PROJECT_DIR$/chapter09/json_test.py" />
@@ -124,10 +97,12 @@
         <option value="$PROJECT_DIR$/chapter12/urllib" />
         <option value="$PROJECT_DIR$/chapter12/proxyhandler_test.py" />
         <option value="$PROJECT_DIR$/chapter12/json_python.py" />
+        <option value="$PROJECT_DIR$/chapter12/XML.txt" />
+        <option value="$PROJECT_DIR$/chapter12/python_xml.py" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds">
+  <component name="ProjectFrameBounds" extendedState="1">
     <option name="x" value="906" />
     <option name="y" value="10" />
     <option name="width" value="974" />
@@ -160,7 +135,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.json_python">
+  <component name="RunManager" selected="Python.python_xml">
     <configuration name="python3_laioxuefeng" type="JupiterNotebook" factoryName="Jupyter Notebook">
       <module name="python3_laioxuefeng" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -176,27 +151,6 @@
       <option name="additionalOptions" value="" />
       <option name="ipnbHost" value="127.0.0.1" />
       <option name="ipnbPort" value="8888" />
-      <method v="2" />
-    </configuration>
-    <configuration name="itertools_test" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="python3_laioxuefeng" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/chapter12" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/chapter12/itertools_test.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
     <configuration name="json_python" type="PythonConfigurationType" factoryName="Python" temporary="true">
@@ -233,6 +187,27 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/chapter12/proxyhandler_test.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="python_xml" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="python3_laioxuefeng" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/chapter12" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/chapter12/python_xml.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -285,11 +260,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.python_xml" />
         <item itemvalue="Python.json_python" />
         <item itemvalue="Python.proxyhandler_test" />
         <item itemvalue="Python.urllib_test" />
         <item itemvalue="Python.with_test" />
-        <item itemvalue="Python.itertools_test" />
       </list>
     </recent_temporary>
   </component>
@@ -397,26 +372,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/chapter10/queue_test.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="297">
-          <caret line="22" column="26" lean-forward="true" selection-start-line="22" selection-start-column="26" selection-end-line="22" selection-end-column="26" />
-          <folding>
-            <element signature="e#24#66#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$APPLICATION_HOME_DIR$/helpers/typeshed/stdlib/3/multiprocessing/__init__.pyi">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="164">
-          <caret line="40" column="6" selection-start-line="40" selection-start-column="6" selection-end-line="40" selection-end-column="6" />
-          <folding>
-            <element signature="e#29#154#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://D:/Python/Python37/Lib/subprocess.py" />
     <entry file="file://$PROJECT_DIR$/chapter10/pool_test.py">
       <provider selected="true" editor-type-id="text-editor">
@@ -709,10 +664,13 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/chapter12/urllib_test.py">
+    <entry file="file://$PROJECT_DIR$/chapter12/json_python.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="513">
-          <caret line="24" column="30" lean-forward="true" selection-start-line="24" selection-start-column="30" selection-end-line="24" selection-end-column="30" />
+        <state relative-caret-position="114">
+          <caret line="10" column="38" lean-forward="true" selection-start-line="10" selection-start-column="38" selection-end-line="10" selection-end-column="38" />
+          <folding>
+            <element signature="e#68#95#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -723,13 +681,24 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/chapter12/json_python.py">
+    <entry file="file://$PROJECT_DIR$/chapter12/urllib_test.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="190">
-          <caret line="14" column="21" lean-forward="true" selection-start-line="14" selection-start-column="21" selection-end-line="14" selection-end-column="21" />
-          <folding>
-            <element signature="e#68#95#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="513">
+          <caret line="24" column="30" lean-forward="true" selection-start-line="24" selection-start-column="30" selection-end-line="24" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/chapter12/XML.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="301">
+          <caret line="28" column="21" selection-start-line="28" selection-start-column="21" selection-end-line="28" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/chapter12/python_xml.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="57">
+          <caret line="3" lean-forward="true" selection-start-line="3" selection-start-column="2" selection-end-line="26" selection-end-column="19" />
         </state>
       </provider>
     </entry>
