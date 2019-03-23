@@ -1,0 +1,24 @@
+hmac
+
+通过哈希算法,我们可以验证一段数据是否有效,方法就是根据对比该数据的哈希值
+计算一段message的哈希时,根据不同口令计算出不同的哈希.
+要验证哈希值,必须同时提供正确的口令
+这实际上就是Hmac算法:Keyed-Hashing for Message Authentication.
+它通过一个标准算法,在哈希计算的过程中,把key混入计算过程中
+和我们自定义的加salt算法不同,Hmac算法针对所以哈希算法都通用,
+采用Hmac替代我们自己的salt算法,可以使程序算法更标准化,也更安全.
+Python自带的hmac模块实现了标准的Hmac算法
+需要准备待计算的原始消息message,随机key,哈希算法,
+import hmac
+message = b'Hello, world!'
+key = b'secret'
+h = hmac.new(key, message, digestmod='MD5')
+# 如果消息很长,可以多次调用h.update(msg)
+h.hexdigest() --> '444fad0d374d14369d6b595062da5d91'
+使用hmac和普通hash算法非常相似.hmac输出的长度和原始哈希算法的长度一致.
+注意传入的key和message都是bytes类型,str类型需要首先编码位bytes
+
+
+小结:
+Python内置的hmac模块实现了标准的Hmac算法.它利用一个key对message计算"杂凑"后的hash,
+使用hmac算法比标准hash算法更安全,因为针对相同的message,不同的key会产生不同的hash

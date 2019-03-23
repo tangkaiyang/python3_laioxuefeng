@@ -2,13 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="51f49763-80ec-4f41-9f9c-4922f493dd86" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/chapter12/hashlib.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/chapter12/struct.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/chapter12/struct_test.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/python3_laioxuefeng.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/python3_laioxuefeng.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter12/hashlib_test.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter12/hmac.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter12/hmac_test.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter12/itertools.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter12/itertools_test.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/chapter12/base64_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/chapter12/base64_test.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter12/hashlib.txt" beforeDir="false" afterPath="$PROJECT_DIR$/chapter12/hashlib.txt" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -18,11 +18,20 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/chapter12/hashlib.txt">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/chapter12/itertools.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="133">
-              <caret line="7" column="18" selection-start-line="7" selection-start-column="18" selection-end-line="7" selection-end-column="18" />
+            <state relative-caret-position="433">
+              <caret line="59" column="29" selection-start-line="59" selection-start-column="29" selection-end-line="59" selection-end-column="29" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/chapter12/itertools_test.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="285">
+              <caret line="15" column="4" selection-start-line="15" selection-start-column="4" selection-end-line="15" selection-end-column="4" />
             </state>
           </provider>
         </entry>
@@ -43,11 +52,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/chapter08/err_reraise.py" />
-        <option value="$PROJECT_DIR$/chapter08/error_practice.py" />
-        <option value="$PROJECT_DIR$/chapter08/assert_test.py" />
-        <option value="$PROJECT_DIR$/chapter08/logging_test.py" />
-        <option value="$PROJECT_DIR$/chapter08/err_raise.py" />
         <option value="$PROJECT_DIR$/chapter08/mydict.py" />
         <option value="$PROJECT_DIR$/chapter08/mydict_test.py" />
         <option value="$PROJECT_DIR$/chapter08/unittest_prac.py" />
@@ -94,14 +98,19 @@
         <option value="$PROJECT_DIR$/chapter12/struct.txt" />
         <option value="$PROJECT_DIR$/chapter12/struct_test.py" />
         <option value="$PROJECT_DIR$/chapter12/hashlib.txt" />
+        <option value="$PROJECT_DIR$/chapter12/hashlib_test.py" />
+        <option value="$PROJECT_DIR$/chapter12/hmac_test.py" />
+        <option value="$PROJECT_DIR$/chapter12/hmac.txt" />
+        <option value="$PROJECT_DIR$/chapter12/itertools.txt" />
+        <option value="$PROJECT_DIR$/chapter12/itertools_test.py" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="907" />
+    <option name="x" value="906" />
     <option name="y" value="10" />
-    <option name="width" value="973" />
-    <option name="height" value="1019" />
+    <option name="width" value="974" />
+    <option name="height" value="1020" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
@@ -130,7 +139,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.struct_test">
+  <component name="RunManager" selected="Python.itertools_test">
     <configuration name="python3_laioxuefeng" type="JupiterNotebook" factoryName="Jupyter Notebook">
       <module name="python3_laioxuefeng" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -169,7 +178,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="chainmap" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="hashlib_test" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="python3_laioxuefeng" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -181,7 +190,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/chapter12/chainmap.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/chapter12/hashlib_test.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -190,7 +199,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="collections_test" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="hmac_test" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="python3_laioxuefeng" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -202,7 +211,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/chapter12/collections_test.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/chapter12/hmac_test.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -211,7 +220,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="fifodict" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="itertools_test" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="python3_laioxuefeng" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -223,7 +232,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/chapter12/fifodict.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/chapter12/itertools_test.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -255,11 +264,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.itertools_test" />
+        <item itemvalue="Python.hmac_test" />
+        <item itemvalue="Python.hashlib_test" />
         <item itemvalue="Python.struct_test" />
         <item itemvalue="Python.base64_test" />
-        <item itemvalue="Python.chainmap" />
-        <item itemvalue="Python.fifodict" />
-        <item itemvalue="Python.collections_test" />
       </list>
     </recent_temporary>
   </component>
@@ -318,22 +327,23 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="726" y="8" width="778" height="815" extended-state="0" />
+    <frame x="725" y="8" width="779" height="816" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" weight="0.24773756" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.2497721" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.34260616" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.34210527" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.3943503" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.3299435" />
       <window_info anchor="bottom" id="Version Control" order="7" weight="0.3299435" />
-      <window_info anchor="bottom" id="Terminal" order="8" weight="0.329429" />
+      <window_info anchor="bottom" id="Terminal" order="8" weight="0.32894737" />
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
-      <window_info anchor="bottom" id="Python Console" order="10" weight="0.2737921" />
+      <window_info active="true" anchor="bottom" id="Python Console" order="10" visible="true" weight="0.2733918" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -366,32 +376,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$APPLICATION_HOME_DIR$/helpers/typeshed/stdlib/3/typing.pyi">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="168">
-          <caret line="348" column="8" selection-start-line="348" selection-start-column="8" selection-end-line="348" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$APPLICATION_HOME_DIR$/helpers/typeshed/stdlib/2and3/shutil.pyi">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-684">
-          <folding>
-            <element signature="e#0#9#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://D:/Python/Python37/Lib/ntpath.py" />
-    <entry file="file://$USER_HOME$/.PyCharmCE2018.3/system/python_stubs/-516756811/builtins.py" />
-    <entry file="file://$PROJECT_DIR$/chapter09/os_test.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="515">
-          <caret line="46" lean-forward="true" selection-start-line="46" selection-end-line="46" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://D:/Python/Python37/Lib/json/__init__.py" />
     <entry file="file://$PROJECT_DIR$/chapter09/write_test.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="423">
@@ -673,10 +657,52 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/chapter12/hashlib_test.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="167">
+          <caret line="49" column="13" lean-forward="true" selection-start-line="49" selection-start-column="13" selection-end-line="49" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/chapter12/hmac_test.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="191">
+          <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/chapter12/hmac.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="437">
+          <caret line="23" column="52" selection-start-line="23" selection-start-column="52" selection-end-line="23" selection-end-column="52" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/chapter12/hashlib.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="133">
-          <caret line="7" column="18" selection-start-line="7" selection-start-column="18" selection-end-line="7" selection-end-column="18" />
+        <state relative-caret-position="544">
+          <caret line="49" column="14" selection-start-line="49" selection-start-column="14" selection-end-line="49" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/chapter12/itertools.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="433">
+          <caret line="59" column="29" selection-start-line="59" selection-start-column="29" selection-end-line="59" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/.PyCharmCE2018.3/system/python_stubs/-2036615904/itertools.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="157">
+          <caret line="240" column="6" selection-start-line="240" selection-start-column="6" selection-end-line="240" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/chapter12/itertools_test.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="15" column="4" selection-start-line="15" selection-start-column="4" selection-end-line="15" selection-end-column="4" />
         </state>
       </provider>
     </entry>
