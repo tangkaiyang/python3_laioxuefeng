@@ -2,11 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="51f49763-80ec-4f41-9f9c-4922f493dd86" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/chapter12/HTMLParser.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/chapter12/htmlparser_test.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/chapter12/xml_example.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter13/Pillow.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter13/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter13/gen_code.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter13/pil_test.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter13/常用第三方模块" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/chapter12/XML.txt" beforeDir="false" afterPath="$PROJECT_DIR$/chapter12/XML.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter12/htmlparser_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/chapter12/htmlparser_test.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter12/xml_example.py" beforeDir="false" afterPath="$PROJECT_DIR$/chapter12/xml_example.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -15,38 +19,7 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/chapter12/XML.txt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="301">
-              <caret line="34" selection-start-line="34" selection-end-line="34" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/chapter12/HTMLParser.txt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="304">
-              <caret line="13" column="52" selection-start-line="13" selection-start-column="52" selection-end-line="13" selection-end-column="52" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/chapter12/htmlparser_test.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="125">
-              <caret line="68" column="29" lean-forward="true" selection-start-line="68" selection-start-column="29" selection-end-line="68" selection-end-column="29" />
-              <folding>
-                <element signature="e#1044#1078#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -62,10 +35,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/chapter09/IO编程" />
-        <option value="$PROJECT_DIR$/chapter10/fork_test.py" />
-        <option value="$PROJECT_DIR$/chapter10/process_test.py" />
-        <option value="$PROJECT_DIR$/chapter10/pool_test.py" />
         <option value="$PROJECT_DIR$/chapter10/subprocess_test.py" />
         <option value="$PROJECT_DIR$/chapter10/queue_test.py" />
         <option value="$PROJECT_DIR$/chapter10/thread_test.py" />
@@ -109,24 +78,46 @@
         <option value="$PROJECT_DIR$/chapter12/proxyhandler_test.py" />
         <option value="$PROJECT_DIR$/chapter12/json_python.py" />
         <option value="$PROJECT_DIR$/chapter12/python_xml.py" />
-        <option value="$PROJECT_DIR$/chapter12/xml_example.py" />
-        <option value="$PROJECT_DIR$/chapter12/htmlparser_test.py" />
         <option value="$PROJECT_DIR$/chapter12/XML.txt" />
         <option value="$PROJECT_DIR$/chapter12/HTMLParser.txt" />
+        <option value="$PROJECT_DIR$/chapter12/xml_example.py" />
+        <option value="$PROJECT_DIR$/chapter12/htmlparser_test.py" />
+        <option value="$PROJECT_DIR$/chapter13/常用第三方模块" />
+        <option value="$PROJECT_DIR$/chapter13/pil_test.py" />
+        <option value="$PROJECT_DIR$/chapter13/Pillow.txt" />
+        <option value="$PROJECT_DIR$/chapter13/gen_code.py" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="906" />
+    <option name="x" value="905" />
     <option name="y" value="10" />
-    <option name="width" value="974" />
+    <option name="width" value="975" />
     <option name="height" value="1020" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
-    <panes />
+    <panes>
+      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="python3_laioxuefeng" type="b2602c69:ProjectViewProjectNode" />
+              <item name="python3_laioxuefeng" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="python3_laioxuefeng" type="b2602c69:ProjectViewProjectNode" />
+              <item name="python3_laioxuefeng" type="462c0819:PsiDirectoryNode" />
+              <item name="chapter13" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+    </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
@@ -149,7 +140,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.htmlparser_test">
+  <component name="RunManager" selected="Python.pil_test">
     <configuration name="python3_laioxuefeng" type="JupiterNotebook" factoryName="Jupyter Notebook">
       <module name="python3_laioxuefeng" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -209,7 +200,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="proxyhandler_test" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="pil_test" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="python3_laioxuefeng" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -217,11 +208,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/chapter12" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/chapter13" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/chapter12/proxyhandler_test.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/chapter13/pil_test.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -251,7 +242,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="urllib_test" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="xml_example" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="python3_laioxuefeng" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -263,7 +254,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/chapter12/urllib_test.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/chapter12/xml_example.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -274,11 +265,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.pil_test" />
         <item itemvalue="Python.htmlparser_test" />
+        <item itemvalue="Python.xml_example" />
         <item itemvalue="Python.python_xml" />
         <item itemvalue="Python.json_python" />
-        <item itemvalue="Python.proxyhandler_test" />
-        <item itemvalue="Python.urllib_test" />
       </list>
     </recent_temporary>
   </component>
@@ -337,21 +328,21 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="725" y="8" width="779" height="816" extended-state="0" />
+    <frame x="724" y="8" width="780" height="816" extended-state="0" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" weight="0.24773756" />
+      <window_info content_ui="combo" id="Project" order="0" weight="0.24731183" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.2497721" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.46637428" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49865592" weight="0.40350878" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.3943503" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.3299435" />
       <window_info anchor="bottom" id="Version Control" order="7" weight="0.3299435" />
-      <window_info anchor="bottom" id="Terminal" order="8" weight="0.12426901" />
-      <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
+      <window_info anchor="bottom" id="Terminal" order="8" weight="0.33333334" />
+      <window_info active="true" anchor="bottom" id="Event Log" order="9" sideWeight="0.5013441" side_tool="true" visible="true" weight="0.32894737" />
       <window_info anchor="bottom" id="Python Console" order="10" weight="0.2733918" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -385,33 +376,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://D:/Python/Python37/Lib/_threading_local.py" />
-    <entry file="file://$PROJECT_DIR$/chapter10/local_global.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="190">
-          <caret line="10" column="5" lean-forward="true" selection-start-line="10" selection-start-column="5" selection-end-line="10" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://D:/Python/Python37/Lib/threading.py" />
-    <entry file="file://$PROJECT_DIR$/chapter10/thread_event.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="171">
-          <caret line="21" column="27" lean-forward="true" selection-start-line="25" selection-start-column="23" selection-end-line="25" selection-end-column="25" />
-          <folding>
-            <element signature="e#323#339#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/chapter10/manager_test.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="222">
-          <caret line="16" column="30" lean-forward="true" selection-start-line="16" selection-start-column="30" selection-end-line="16" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/chapter10/manager_queue.py" />
     <entry file="file://$PROJECT_DIR$/chapter10/task_manager.py" />
     <entry file="file://D:/Python/Python37/Lib/multiprocessing/queues.py" />
     <entry file="file://$PROJECT_DIR$/chapter10/thread_test.py">
@@ -686,13 +650,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/chapter12/xml_example.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="296">
-          <caret line="26" lean-forward="true" selection-start-line="26" selection-end-line="26" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/chapter12/python_xml.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="239">
@@ -700,27 +657,79 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$USER_HOME$/.PyCharmCE2018.3/system/python_stubs/-2036615904/pyexpat.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="266">
+          <caret line="27" column="4" selection-start-line="27" selection-start-column="4" selection-end-line="27" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://D:/Anaconda3/Lib/html/parser.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-7527">
+          <caret line="62" column="6" selection-start-line="62" selection-start-column="6" selection-end-line="62" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/chapter12/htmlparser_test.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="125">
-          <caret line="68" column="29" lean-forward="true" selection-start-line="68" selection-start-column="29" selection-end-line="68" selection-end-column="29" />
+        <state relative-caret-position="1197">
+          <caret line="63" lean-forward="true" selection-start-line="63" selection-end-line="63" />
           <folding>
-            <element signature="e#1044#1078#0" expanded="true" />
+            <element signature="e#1035#1069#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/chapter12/xml_example.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-475">
+          <caret line="27" column="3" lean-forward="true" selection-start-line="27" selection-start-column="3" selection-end-line="27" selection-end-column="3" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/chapter12/XML.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="301">
+        <state relative-caret-position="741">
           <caret line="34" selection-start-line="34" selection-end-line="34" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/chapter12/HTMLParser.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="304">
+        <state relative-caret-position="342">
           <caret line="13" column="52" selection-start-line="13" selection-start-column="52" selection-end-line="13" selection-end-column="52" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/chapter13/常用第三方模块">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="76">
+          <caret line="4" column="2" selection-start-line="4" selection-start-column="2" selection-end-line="4" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/chapter13/Pillow.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="209">
+          <caret line="11" column="11" selection-start-line="11" selection-start-column="11" selection-end-line="11" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/chapter13/gen_code.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="95">
+          <caret line="5" column="6" selection-start-line="5" selection-start-column="6" selection-end-line="5" selection-end-column="6" />
+          <folding>
+            <element signature="e#25#81#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/chapter13/pil_test.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="133">
+          <caret line="7" column="16" selection-start-line="7" selection-start-column="16" selection-end-line="7" selection-end-column="16" />
         </state>
       </provider>
     </entry>

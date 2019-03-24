@@ -69,6 +69,7 @@ class MyHTMLParser(HTMLParser):
         print('&#%s;' % name)
 
 parser = MyHTMLParser()
+# parser = HTMLParser()
 parser.feed('''<html>
 <head></head>
 <body>

@@ -1,0 +1,12 @@
+Pillow
+PIL:Python Imaging Library,已经是Python平台事实上的图像处理标准库了.
+PIL功能非常强大,但API却非常简单易用．
+PIL仅支持到Python2.7，兼容版本Pillow，支持最新的3.x
+
+操作图像
+pil_test.py
+其他功能如切片,旋转,滤镜,输出文字,调色板等一应俱全.
+比如,模糊效果:
+pil_test.py
+PIL的ImageDraw提供了系列绘图方法,让我们可以字节绘图.比如要生成验证码图片
+gen_code.py
