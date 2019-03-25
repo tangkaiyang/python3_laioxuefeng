@@ -30,3 +30,14 @@ login()方法用来登录SMTP服务器,
 sendmail()方法就是发邮件,
 由于一次可以发给多人,所以传入一个list,邮件正文是一个str,
 as_string()把MIMEText对象变成str.
+
+有以下问题:
+1.邮件没有主题
+2.收件人名字没有显示为友好的名字
+3.明明收到了邮件,却提示不再收件人中
+这是因为邮件主题,如何显示发件人,收件人等信息并不是通过SMTP协议发送给MTA,
+而是包含在发给MTA的文本中,所有,我们必须把From,To和Subject添加到MIMEText中,才是一封完整的邮件
+smtp_test.py
+我们编写了一个函数_format_addr()来格式化一个邮件地址.
+注意不能简单地传入name<addr@example.com>,因为如果包含中文,需要通过Header对象进行编码.
+msg['To']接收的是字符串而不是list,如果有多个邮件地址,用,分隔即可.
