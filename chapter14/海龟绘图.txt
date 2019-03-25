@@ -1,0 +1,4 @@
+ 海龟绘图
+ LOGO语言:儿童学习的编程语言
+ Python内置了turtle库,基本上100%复制了原始的Turtle Graphics(海龟绘图)的所有功能
+ turtle_test.py
