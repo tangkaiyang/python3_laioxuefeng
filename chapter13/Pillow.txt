@@ -10,3 +10,4 @@ pil_test.py
 pil_test.py
 PIL的ImageDraw提供了系列绘图方法,让我们可以字节绘图.比如要生成验证码图片
 gen_code.py
+
