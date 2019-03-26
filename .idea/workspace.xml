@@ -1,14 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="51f49763-80ec-4f41-9f9c-4922f493dd86" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/python3_laioxuefeng.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/python3_laioxuefeng.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/chapter13/gen_code.py" beforeDir="false" afterPath="$PROJECT_DIR$/chapter13/gen_code.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/chapter16/SMTP发送邮件.txt" beforeDir="false" afterPath="$PROJECT_DIR$/chapter16/SMTP发送邮件.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/chapter16/smtp_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/chapter16/smtp_test.py" afterDir="false" />
-    </list>
+    <list default="true" id="51f49763-80ec-4f41-9f9c-4922f493dd86" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -19,38 +12,7 @@
     <favorites_list name="python3_laioxuefeng" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/chapter16/SMTP发送邮件.txt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="457">
-              <caret line="126" column="25" selection-start-line="126" selection-start-column="25" selection-end-line="126" selection-end-column="25" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/chapter16/smtp_test.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="357">
-              <caret line="74" column="17" lean-forward="true" selection-start-line="74" selection-start-column="17" selection-end-line="74" selection-end-column="17" />
-              <folding>
-                <element signature="e#515#541#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://D:/Python/Python37/Lib/email/mime/base.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="165">
-              <caret line="17" column="8" selection-start-line="17" selection-start-column="8" selection-end-line="17" selection-end-column="8" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -66,8 +28,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/chapter12/fifodict.py" />
-        <option value="$PROJECT_DIR$/chapter12/collections" />
         <option value="$PROJECT_DIR$/chapter12/chainmap.py" />
         <option value="$PROJECT_DIR$/chapter12/base64" />
         <option value="$PROJECT_DIR$/chapter12/base64_test.py" />
@@ -117,6 +77,8 @@
         <option value="$PROJECT_DIR$/chapter13/gen_code.py" />
         <option value="$PROJECT_DIR$/chapter16/smtp_test.py" />
         <option value="$PROJECT_DIR$/chapter16/SMTP发送邮件.txt" />
+        <option value="$PROJECT_DIR$/chapter16/pop3_test.py" />
+        <option value="$PROJECT_DIR$/chapter16/POP3收取邮件.txt" />
       </list>
     </option>
   </component>
@@ -130,11 +92,44 @@
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
-    <panes />
+    <panes>
+      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="python3_laioxuefeng" type="b2602c69:ProjectViewProjectNode" />
+              <item name="python3_laioxuefeng" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="python3_laioxuefeng" type="b2602c69:ProjectViewProjectNode" />
+              <item name="python3_laioxuefeng" type="462c0819:PsiDirectoryNode" />
+              <item name="chapter13" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="python3_laioxuefeng" type="b2602c69:ProjectViewProjectNode" />
+              <item name="python3_laioxuefeng" type="462c0819:PsiDirectoryNode" />
+              <item name="chapter14" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="python3_laioxuefeng" type="b2602c69:ProjectViewProjectNode" />
+              <item name="python3_laioxuefeng" type="462c0819:PsiDirectoryNode" />
+              <item name="chapter15" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="python3_laioxuefeng" type="b2602c69:ProjectViewProjectNode" />
+              <item name="python3_laioxuefeng" type="462c0819:PsiDirectoryNode" />
+              <item name="chapter16" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+    </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+    <property name="settings.editor.selected.configurable" value="vcs.Git" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -153,7 +148,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.smtp_test">
+  <component name="RunManager" selected="Python.pop3_test">
     <configuration name="python3_laioxuefeng" type="JupiterNotebook" factoryName="Jupyter Notebook">
       <module name="python3_laioxuefeng" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -169,27 +164,6 @@
       <option name="additionalOptions" value="" />
       <option name="ipnbHost" value="127.0.0.1" />
       <option name="ipnbPort" value="8888" />
-      <method v="2" />
-    </configuration>
-    <configuration name="draw_star" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="python3_laioxuefeng" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/chapter14" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/chapter14/draw_star.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
     <configuration name="fractal_tree" type="PythonConfigurationType" factoryName="Python" temporary="true">
@@ -226,6 +200,27 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/chapter13/gen_code.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="pop3_test" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="python3_laioxuefeng" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/chapter16" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/chapter16/pop3_test.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -278,19 +273,19 @@
     </configuration>
     <list>
       <item itemvalue="Jupyter Notebook.python3_laioxuefeng" />
-      <item itemvalue="Python.draw_star" />
       <item itemvalue="Python.fractal_tree" />
       <item itemvalue="Python.socket_test" />
       <item itemvalue="Python.smtp_test" />
       <item itemvalue="Python.gen_code" />
+      <item itemvalue="Python.pop3_test" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.pop3_test" />
         <item itemvalue="Python.smtp_test" />
         <item itemvalue="Python.gen_code" />
         <item itemvalue="Python.socket_test" />
         <item itemvalue="Python.fractal_tree" />
-        <item itemvalue="Python.draw_star" />
       </list>
     </recent_temporary>
   </component>
@@ -350,9 +345,8 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="801" y="1" width="1103" height="1018" extended-state="0" />
-    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" weight="0.24653149" />
+      <window_info content_ui="combo" id="Project" order="0" weight="0.2460094" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.2497721" />
       <window_info id="Favorites" order="2" side_tool="true" weight="0.32977587" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -398,9 +392,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$USER_HOME$/.PyCharmCE2018.3/system/python_stubs/-2036615904/itertools.py" />
-    <entry file="file://$PROJECT_DIR$/chapter12/itertools_test.py" />
-    <entry file="file://$PROJECT_DIR$/chapter12/itertools.txt" />
     <entry file="file://D:/Anaconda3/Lib/contextlib.py" />
     <entry file="file://$PROJECT_DIR$/chapter12/with_test.py" />
     <entry file="file://$PROJECT_DIR$/chapter12/contextlib.txt" />
@@ -497,20 +488,44 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/chapter16/SMTP发送邮件.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="457">
+          <caret line="126" column="25" selection-start-line="126" selection-start-column="25" selection-end-line="126" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://D:/Python/Python37/Lib/email/message.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="369" column="8" selection-start-line="369" selection-start-column="8" selection-end-line="369" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/chapter16/pop3_test.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="246">
+          <caret line="90" column="36" lean-forward="true" selection-start-line="90" selection-start-column="36" selection-end-line="90" selection-end-column="36" />
+          <folding>
+            <element signature="e#25#38#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/chapter16/smtp_test.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="74" column="17" lean-forward="true" selection-start-line="74" selection-start-column="17" selection-end-line="74" selection-end-column="17" />
+        <state relative-caret-position="-327">
+          <caret line="35" column="28" selection-start-line="35" selection-start-column="12" selection-end-line="35" selection-end-column="28" />
           <folding>
             <element signature="e#515#541#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/chapter16/SMTP发送邮件.txt">
+    <entry file="file://$PROJECT_DIR$/chapter16/POP3收取邮件.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="457">
-          <caret line="126" column="25" selection-start-line="126" selection-start-column="25" selection-end-line="126" selection-end-column="25" />
+          <caret line="111" column="51" selection-start-line="111" selection-start-column="51" selection-end-line="111" selection-end-column="51" />
         </state>
       </provider>
     </entry>
