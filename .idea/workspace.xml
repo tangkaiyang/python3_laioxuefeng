@@ -2,13 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="51f49763-80ec-4f41-9f9c-4922f493dd86" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/chapter17/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/chapter17/sql_test.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/chapter17/sqlalchemy_test.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/chapter17/使用MySQL.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/chapter17/使用SQLAlchemy.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/chapter17/使用SQLite.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/chapter17/访问数据库.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter18/HTTP协议简介.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter18/Web开发.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter18/__init__.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -23,58 +19,19 @@
   <component name="FileEditorManager">
     <leaf>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/chapter17/访问数据库.txt">
+        <entry file="file://$PROJECT_DIR$/chapter18/Web开发.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="530">
-              <caret line="30" selection-start-line="30" selection-end-line="30" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/chapter17/使用SQLite.txt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="499">
-              <caret line="61" selection-start-line="61" selection-end-line="61" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/chapter17/sql_test.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="414">
-              <caret line="32" column="22" selection-start-line="32" selection-start-column="22" selection-end-line="32" selection-end-column="22" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/chapter17/使用MySQL.txt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="24">
-              <caret line="21" column="11" selection-start-line="21" selection-start-column="11" selection-end-line="21" selection-end-column="11" />
+            <state relative-caret-position="513">
+              <caret line="26" lean-forward="true" selection-start-line="26" selection-end-line="26" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/chapter17/使用SQLAlchemy.txt">
+        <entry file="file://$PROJECT_DIR$/chapter18/HTTP协议简介.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="457">
+            <state relative-caret-position="821">
               <caret line="90" lean-forward="true" selection-start-line="90" selection-end-line="90" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/chapter17/sqlalchemy_test.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="129">
-              <caret line="31" column="18" lean-forward="true" selection-start-line="31" selection-start-column="18" selection-end-line="31" selection-end-column="18" />
-              <folding>
-                <element signature="e#31#83#0" expanded="true" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -95,8 +52,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/chapter12/hmac_test.py" />
-        <option value="$PROJECT_DIR$/chapter12/hmac.txt" />
         <option value="$PROJECT_DIR$/chapter12/itertools.txt" />
         <option value="$PROJECT_DIR$/chapter12/itertools_test.py" />
         <option value="$PROJECT_DIR$/chapter12/contextlib.txt" />
@@ -146,12 +101,14 @@
         <option value="$PROJECT_DIR$/chapter17/使用MySQL.txt" />
         <option value="$PROJECT_DIR$/chapter17/sqlalchemy_test.py" />
         <option value="$PROJECT_DIR$/chapter17/使用SQLAlchemy.txt" />
+        <option value="$PROJECT_DIR$/chapter18/Web开发.txt" />
+        <option value="$PROJECT_DIR$/chapter18/HTTP协议简介.txt" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="801" />
-    <option name="y" value="1" />
+    <option name="x" value="681" />
+    <option name="y" value="28" />
     <option name="width" value="1103" />
     <option name="height" value="1018" />
   </component>
@@ -191,6 +148,11 @@
               <item name="python3_laioxuefeng" type="b2602c69:ProjectViewProjectNode" />
               <item name="python3_laioxuefeng" type="462c0819:PsiDirectoryNode" />
               <item name="chapter17" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="python3_laioxuefeng" type="b2602c69:ProjectViewProjectNode" />
+              <item name="python3_laioxuefeng" type="462c0819:PsiDirectoryNode" />
+              <item name="chapter18" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="python3_laioxuefeng" type="b2602c69:ProjectViewProjectNode" />
@@ -579,15 +541,14 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="801" y="1" width="1103" height="1018" extended-state="0" />
-    <editor active="true" />
+    <frame x="681" y="28" width="1103" height="1018" extended-state="0" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49943504" weight="0.2460094" />
       <window_info id="Structure" order="1" sideWeight="0.500565" side_tool="true" weight="0.2460094" />
       <window_info id="Favorites" order="2" side_tool="true" weight="0.32977587" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49733192" visible="true" weight="0.41129944" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49733192" weight="0.41129944" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.3943503" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -628,8 +589,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/chapter12/htmlparser_test.py" />
-    <entry file="file://$PROJECT_DIR$/chapter12/xml_example.py" />
     <entry file="file://$PROJECT_DIR$/chapter12/XML.txt" />
     <entry file="file://$PROJECT_DIR$/chapter12/HTMLParser.txt" />
     <entry file="file://$PROJECT_DIR$/chapter13/常用第三方模块" />
@@ -803,6 +762,13 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/chapter17/使用SQLAlchemy.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="457">
+          <caret line="91" column="21" selection-start-line="91" selection-start-column="21" selection-end-line="91" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/chapter17/sqlalchemy_test.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="129">
@@ -813,9 +779,16 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/chapter17/使用SQLAlchemy.txt">
+    <entry file="file://$PROJECT_DIR$/chapter18/Web开发.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="457">
+        <state relative-caret-position="513">
+          <caret line="26" lean-forward="true" selection-start-line="26" selection-end-line="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/chapter18/HTTP协议简介.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="821">
           <caret line="90" lean-forward="true" selection-start-line="90" selection-end-line="90" />
         </state>
       </provider>
