@@ -36,4 +36,4 @@ for t in range(4):
     draw.text((60 * t + 10, 10), rndChar(), font=font, fill=rndColor2())
 # 模糊
 image = image.filter(ImageFilter.BLUR)
-image.save('code.jpg', 'jpeg')
+image.save('D:\PycharmProjects\python3_laioxuefeng\chapter16\code.png', 'png')

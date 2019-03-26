@@ -41,3 +41,87 @@ smtp_test.py
 我们编写了一个函数_format_addr()来格式化一个邮件地址.
 注意不能简单地传入name<addr@example.com>,因为如果包含中文,需要通过Header对象进行编码.
 msg['To']接收的是字符串而不是list,如果有多个邮件地址,用,分隔即可.
+看到的收件人名字很可能不是传入的管理员,
+因为很多邮件服务商在显示邮件时,会把收件人名字自动替换为用户注册的名字,但是其他收件人名字的显示不受影响
+send: b'Content-Type: text/plain; charset="utf-8"\r\nMIME-Version: 1.0\r\nContent-Transfer-Encoding: base64\r\nFrom: =?utf-8?b?UHl0aG9u54ix5aW96ICF?= <945541696@qq.com>\r\nTo: =?utf-8?b?566h55CG5ZGY?= <m17757989076@163.com>\r\nSubject: =?utf-8?b?5p2l6IeqU01UUOeahOmXruWAmS4uLi4u?=\r\n\r\naGVsbG8sIHNlbmQgYnkgUHl0aG9uLi4u\r\n.\r\n'
+上述是经过Header对象编码的文本,包含utf-8编码信息和Base64编码的文本.
+手动构造会很复杂
+
+发送HTML邮件
+构造MIMEText对象时,把HTML字符串传进去,再把参数plain变为HTML即可
+
+发送附件
+带附件的邮件可以看做包含若干部分的邮件:文本和各个附件本身,
+所以,可以构造一个MIMEMultipart对象代表邮件本身,然后往里面加上一个MIMEText作为邮件正文,再继续往里面加上表示附件的
+MIMEBase对象即可:
+# 邮件对象
+msg = MIMEMultipart()
+msg['From'] = _format_addr('Python爱好者 <%s>' % from_addr
+msg['To'] = _format_addr('管理员 <%s>' % to_addr
+msg['Subject'] = Header('来自SMTP的问候...', 'utf-8').encode()
+# 邮件正文是MIMEText
+msg.attach(MIMEText('send with file...', 'plain', 'utf-8'))
+# 添加附件就是加上一个MIMEBase,从本地读取一个图片:
+with open('code.png', 'rb') as f:
+# 设置附件的MIME和文件名,这里是jpg类型:
+mime = MIMEBase('image', 'png', filename='code.png')
+# 加上必要的头信息
+mime.add_header('Content-Disposition', 'attachment', filename='code.png')
+mime.add_header('Content-ID', '<0>')
+mime.add_header('X-Attachment-Id', '0')
+# 把附件的内容读进来
+mime.set_payload(f.read())
+# 用Base64编码:
+encoders.encode_base64(mime)
+# 添加到MIMEMultipart:
+msg.attach(mime)
+
+发送图片
+把一个图片嵌入到正文中
+直接在HTML邮件中连接图片地址是不行的,
+大部分邮件服务商都会自动屏蔽带有外链的图片,因为不知道这些连接是否指向恶意网站
+要把图片嵌入到邮件正文中,我们需要按照发送附件的方式,先把邮件作为附件添加进去,
+然后,在HTML中通过引用src="cid:0"就可以把附件作为图片嵌入了.
+如果有多个图片,给他们一次编号,然后引用不同的cid:x即可
+把上面代码加入MIMEMultipart的MIMEText从plain改为html,然后在适当的的位置引用图片
+
+同时支持HTML和Plain格式
+如果我们发送HTML邮件,收件人通过浏览器或者Outlook之类的软件是可以正常浏览邮件内容的,
+但是,如果收件人使用的设备太古老,查看不了HTML邮件怎么办?
+方法是在发送HTML的同时再附加一个纯文本,如果收件人无法查看HTML格式的邮件,就可以自动降级查看纯文本邮件.
+利用MIMEMultipart就可以组合一个HTML和Plain,要注意指定的subtype是alternative:(二选一)
+msg = MIMEMultipart('alternative')
+msg['From'] = ...
+msg['To'] = ...
+msg['Subject'] = ...
+msg.attach(MIMEText('hello', 'plain', 'utf-8'))
+msg.attach(MIMEText('<html><body><h1>Hello</h1></body></html>', 'html', 'utf-8'))
+# 正常发送msg对象
+
+加密SMTP
+使用标准的25端口连接SMTP服务器时,使用的是明文传输,发送邮件的整个过程可能会被窃听.
+要更安全地发送邮件,可以加密SMTP会话,实际上就是先创建SSL安全连接,然后使用SMTP协议发送邮件.
+某些邮件服务商,例如Gmail,提供的SMTP服务必须要加密传输.
+Gmail的SMTP端口是587
+smtp_server = 'smtp.gmail.com'
+smtp_port = 587
+server = smtplib.SMTP(smtp_server, smtp_port)
+server.starttls()
+# 剩下的代码一样
+只需要在创建SMTP对象后,立刻调用starttls()方法,就创建了安全连接.后面的代码和前面的发送邮件代码完全一样
+
+小结:
+使用Python的smtplib发送邮件十分简单,只要掌握了各种邮件类型的构造方法,正确设置好邮件头,就可以顺利发出.
+构造一个邮件对象就是一个Message对象,
+如果构造了一个MIMEText对象,就表示一个文本邮件对象,
+如果构造一个MIMEImage对象,就表示一个座位附件的图片,
+要把多个对象组合起来,就用MIMEMultipart对象,而MIMEBase可以表示任何对象.
+继承关系如下:
+Message
+    MIMEBase
+        MIMEMultipart
+        MIMENonMultipart
+            MIMEMessage
+            MIMEText
+            MIMEImage
+这种嵌套关系就可以构造出任意复杂的邮件.或查看文档
