@@ -1,0 +1,20 @@
+使用模板
+美化前端页面,通过字符串拼接不现实.
+使用模板,我们需要预先准备一个HTML文档,这HTML文档不是普通的HTML,而是嵌入了一些变量和指令,
+然后,根据我们传入的数据,替换后,得到最终的HTML,发送给用户;
+这就是传说中的MVC:Model-View-Controller,中文名"模型-视图-控制器"
+Python处理URL的函数就是C:Controller,Controller负责业务逻辑,比如检查用户名是否存在,取出用户信息等
+包含变量{{name}}的模板就是V:View,View负责显示逻辑,通过简单的替换一些变量,View最终输出的就是用户看到的HTML.
+MVC中的Model是用来传给View的,这样View在替换变量的时候,就可以从Model中取出相应的数据.
+只是因为Python支持关键字参数,很多Web框架允许传入关键字参数,然后,在框架内部组装出一个dict作为Model.
+MVC模式改写之前的例子:
+app.py
+Flask默认支持的模板是jinja2,直接安装:pip install jinja2
+用来显示首页的模板
+home.html
+用来显示登录表单的模板
+form.html
+登录成功的模板
+signin-ok.html
+在form.html中加了一点条件判断,把form.html重用为登录失败的模板
+最后,一定要把模板放到正确的templates目录下,templates和app.py同级目录下
