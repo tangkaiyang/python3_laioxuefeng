@@ -2,20 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="51f49763-80ec-4f41-9f9c-4922f493dd86" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/chapter18/WSGI接口.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/chapter18/app.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/chapter18/hello.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/chapter18/hello.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/chapter18/server.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/chapter18/templates/form.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/chapter18/templates/home.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/chapter18/templates/signin-ok.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/chapter18/使用Web框架.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/chapter18/使用模板.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/aiohttp_test.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter19/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter19/aiohttp.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter19/asyncio.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter19/asyncio_test.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter19/coroutine_test.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter19/web_connect_test.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter19/协程.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter19/异步IO.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/python3_laioxuefeng.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/python3_laioxuefeng.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/chapter18/HTML简介.txt" beforeDir="false" afterPath="$PROJECT_DIR$/chapter18/HTML简介.txt" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -27,12 +25,54 @@
     <favorites_list name="python3_laioxuefeng" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/chapter18/使用Web框架.txt">
+    <leaf>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/chapter19/协程.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="347">
-              <caret line="64" lean-forward="true" selection-start-line="64" selection-end-line="64" />
+            <state relative-caret-position="309">
+              <caret line="31" column="32" selection-start-line="31" selection-start-column="32" selection-end-line="31" selection-end-column="32" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/chapter19/aiohttp.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="209">
+              <caret line="11" column="20" selection-start-line="11" selection-start-column="20" selection-end-line="11" selection-end-column="20" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/aiohttp_test.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="171">
+              <caret line="17" column="21" lean-forward="true" selection-start-line="17" selection-start-column="21" selection-end-line="17" selection-end-column="21" />
+              <folding>
+                <element signature="e#25#39#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/chapter19/asyncio.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="95">
+              <caret line="5" column="15" selection-start-line="5" selection-start-column="15" selection-end-line="5" selection-end-column="15" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/chapter19/asyncio_test.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="456">
+              <caret line="47" column="53" selection-start-line="47" selection-start-column="53" selection-end-line="47" selection-end-column="53" />
+              <folding>
+                <element signature="e#761#775#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -43,8 +83,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Jupyter Notebook" />
-        <option value="Python Script" />
         <option value="HTML File" />
+        <option value="Python Script" />
       </list>
     </option>
   </component>
@@ -54,14 +94,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/chapter12/xml_example.py" />
-        <option value="$PROJECT_DIR$/chapter12/htmlparser_test.py" />
-        <option value="$PROJECT_DIR$/chapter13/常用第三方模块" />
-        <option value="$PROJECT_DIR$/chapter13/pil_test.py" />
-        <option value="$PROJECT_DIR$/chapter13/Pillow.txt" />
-        <option value="$PROJECT_DIR$/chapter13/requests_test.py" />
-        <option value="$PROJECT_DIR$/chapter13/requests.txt" />
-        <option value="$PROJECT_DIR$/chapter13/chardet.txt" />
         <option value="$PROJECT_DIR$/chapter13/psutil_test.py" />
         <option value="$PROJECT_DIR$/chapter13/psutil.txt" />
         <option value="$PROJECT_DIR$/chapter13/virtualenv.txt" />
@@ -103,12 +135,20 @@
         <option value="$PROJECT_DIR$/chapter18/templates/home.html" />
         <option value="$PROJECT_DIR$/chapter18/templates/form.html" />
         <option value="$PROJECT_DIR$/chapter18/templates/signin-ok.html" />
-        <option value="$PROJECT_DIR$/chapter18/app.py" />
         <option value="$PROJECT_DIR$/chapter18/使用Web框架.txt" />
+        <option value="$PROJECT_DIR$/chapter18/app.py" />
+        <option value="$PROJECT_DIR$/chapter19/异步IO.txt" />
+        <option value="$PROJECT_DIR$/chapter19/coroutine_test.py" />
+        <option value="$PROJECT_DIR$/chapter19/asyncio.txt" />
+        <option value="$PROJECT_DIR$/chapter19/asyncio_test.py" />
+        <option value="$PROJECT_DIR$/chapter19/web_connect_test.py" />
+        <option value="$PROJECT_DIR$/chapter19/协程.txt" />
+        <option value="$PROJECT_DIR$/aiohttp_test.py" />
+        <option value="$PROJECT_DIR$/chapter19/aiohttp.txt" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds">
+  <component name="ProjectFrameBounds" extendedState="1">
     <option name="x" value="832" />
     <option name="width" value="1097" />
     <option name="height" value="1038" />
@@ -117,54 +157,7 @@
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
-    <panes>
-      <pane id="ProjectPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="python3_laioxuefeng" type="b2602c69:ProjectViewProjectNode" />
-              <item name="python3_laioxuefeng" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="python3_laioxuefeng" type="b2602c69:ProjectViewProjectNode" />
-              <item name="python3_laioxuefeng" type="462c0819:PsiDirectoryNode" />
-              <item name="chapter13" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="python3_laioxuefeng" type="b2602c69:ProjectViewProjectNode" />
-              <item name="python3_laioxuefeng" type="462c0819:PsiDirectoryNode" />
-              <item name="chapter14" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="python3_laioxuefeng" type="b2602c69:ProjectViewProjectNode" />
-              <item name="python3_laioxuefeng" type="462c0819:PsiDirectoryNode" />
-              <item name="chapter15" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="python3_laioxuefeng" type="b2602c69:ProjectViewProjectNode" />
-              <item name="python3_laioxuefeng" type="462c0819:PsiDirectoryNode" />
-              <item name="chapter16" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="python3_laioxuefeng" type="b2602c69:ProjectViewProjectNode" />
-              <item name="python3_laioxuefeng" type="462c0819:PsiDirectoryNode" />
-              <item name="chapter17" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="python3_laioxuefeng" type="b2602c69:ProjectViewProjectNode" />
-              <item name="python3_laioxuefeng" type="462c0819:PsiDirectoryNode" />
-              <item name="chapter18" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="python3_laioxuefeng" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
-      <pane id="Scope" />
-    </panes>
+    <panes />
   </component>
   <component name="PropertiesComponent">
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
@@ -188,7 +181,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.app">
+  <component name="RunManager" selected="Python.aiohttp_test">
     <configuration name="python3_laioxuefeng" type="JupiterNotebook" factoryName="Jupyter Notebook">
       <module name="python3_laioxuefeng" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -204,6 +197,27 @@
       <option name="additionalOptions" value="" />
       <option name="ipnbHost" value="127.0.0.1" />
       <option name="ipnbPort" value="8888" />
+      <method v="2" />
+    </configuration>
+    <configuration name="aiohttp_test" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="python3_laioxuefeng" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/aiohttp_test.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
     <configuration name="app" type="PythonConfigurationType" factoryName="Python" temporary="true">
@@ -227,7 +241,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="pop3_test" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="asyncio_test" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="python3_laioxuefeng" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -235,11 +249,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/chapter16" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/chapter19" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/chapter16/pop3_test.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/chapter19/asyncio_test.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -248,7 +262,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="server" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="coroutine_test" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="python3_laioxuefeng" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -256,11 +270,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/chapter18" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/chapter19" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/chapter18/server.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/chapter19/coroutine_test.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -269,7 +283,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="sql_test" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="web_connect_test" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="python3_laioxuefeng" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -277,32 +291,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/chapter17" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/chapter19" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/chapter17/sql_test.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="sqlalchemy_test" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="python3_laioxuefeng" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/chapter17" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/chapter17/sqlalchemy_test.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/chapter19/web_connect_test.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -313,19 +306,19 @@
     </configuration>
     <list>
       <item itemvalue="Jupyter Notebook.python3_laioxuefeng" />
-      <item itemvalue="Python.pop3_test" />
-      <item itemvalue="Python.sql_test" />
-      <item itemvalue="Python.sqlalchemy_test" />
-      <item itemvalue="Python.server" />
       <item itemvalue="Python.app" />
+      <item itemvalue="Python.coroutine_test" />
+      <item itemvalue="Python.asyncio_test" />
+      <item itemvalue="Python.web_connect_test" />
+      <item itemvalue="Python.aiohttp_test" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.aiohttp_test" />
+        <item itemvalue="Python.web_connect_test" />
+        <item itemvalue="Python.asyncio_test" />
+        <item itemvalue="Python.coroutine_test" />
         <item itemvalue="Python.app" />
-        <item itemvalue="Python.server" />
-        <item itemvalue="Python.sqlalchemy_test" />
-        <item itemvalue="Python.sql_test" />
-        <item itemvalue="Python.pop3_test" />
       </list>
     </recent_temporary>
   </component>
@@ -384,21 +377,21 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="666" y="0" width="877" height="830" extended-state="0" />
+    <frame x="832" y="0" width="1097" height="1038" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49943504" weight="0.2449465" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49943504" weight="0.24457034" />
       <window_info id="Structure" order="1" sideWeight="0.500565" side_tool="true" weight="0.2460094" />
       <window_info id="Favorites" order="2" side_tool="true" weight="0.32977587" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49583828" visible="true" weight="0.41117477" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49583828" visible="true" weight="0.37790054" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.3943503" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.3299435" />
       <window_info anchor="bottom" id="Version Control" order="7" weight="0.32881355" />
-      <window_info anchor="bottom" id="Terminal" order="8" weight="0.33258173" />
+      <window_info anchor="bottom" id="Terminal" order="8" weight="0.3314917" />
       <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.5041617" side_tool="true" weight="0.41117477" />
       <window_info anchor="bottom" id="Python Console" order="10" weight="0.29943502" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -433,16 +426,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/chapter13/chardet.txt" />
-    <entry file="file://$PROJECT_DIR$/chapter14/first_gui_app.py" />
-    <entry file="file://$PROJECT_DIR$/chapter14/海龟绘图.txt" />
-    <entry file="file://$PROJECT_DIR$/chapter14/draw_star.py" />
-    <entry file="file://$PROJECT_DIR$/chapter14/turtle_test.py" />
-    <entry file="file://$PROJECT_DIR$/chapter14/fractal_tree.py" />
-    <entry file="file://$PROJECT_DIR$/chapter14/图形界面" />
-    <entry file="file://$PROJECT_DIR$/chapter15/sina.html" />
-    <entry file="file://$PROJECT_DIR$/chapter15/socket_test.py" />
-    <entry file="file://$PROJECT_DIR$/chapter15/TCP编程.txt" />
     <entry file="file://$PROJECT_DIR$/chapter15/client_test.py" />
     <entry file="file://$PROJECT_DIR$/chapter15/server_test.py" />
     <entry file="file://$PROJECT_DIR$/chapter15/网络编程" />
@@ -596,8 +579,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/chapter18/app.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="133">
-          <caret line="23" column="39" lean-forward="true" selection-start-line="23" selection-start-column="39" selection-end-line="23" selection-end-column="39" />
+        <state relative-caret-position="19">
+          <caret line="17" column="4" selection-start-line="17" selection-start-column="4" selection-end-line="17" selection-end-column="4" />
           <folding>
             <element signature="e#25#48#0" expanded="true" />
           </folding>
@@ -606,8 +589,84 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/chapter18/使用Web框架.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="347">
-          <caret line="64" lean-forward="true" selection-start-line="64" selection-end-line="64" />
+        <state relative-caret-position="162">
+          <caret line="49" column="39" selection-start-line="49" selection-start-column="39" selection-end-line="49" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/chapter19/异步IO.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="418">
+          <caret line="22" lean-forward="true" selection-start-line="22" selection-end-line="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/chapter19/asyncio.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="95">
+          <caret line="5" column="15" selection-start-line="5" selection-start-column="15" selection-end-line="5" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/chapter19/asyncio_test.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="456">
+          <caret line="47" column="53" selection-start-line="47" selection-start-column="53" selection-end-line="47" selection-end-column="53" />
+          <folding>
+            <element signature="e#761#775#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/chapter19/coroutine_test.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="342">
+          <caret line="18" column="48" lean-forward="true" selection-start-line="18" selection-start-column="48" selection-end-line="18" selection-end-column="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://D:/Python/Python37/Lib/asyncio/streams.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="179">
+          <caret line="52" column="10" selection-start-line="52" selection-start-column="10" selection-end-line="52" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/chapter19/web_connect_test.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="76">
+          <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/chapter19/协程.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="309">
+          <caret line="31" column="32" selection-start-line="31" selection-start-column="32" selection-end-line="31" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://D:/Python/Python37/Lib/site-packages/aiohttp/web_app.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2573">
+          <caret line="368" column="8" selection-start-line="368" selection-start-column="8" selection-end-line="368" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/chapter19/aiohttp.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="209">
+          <caret line="11" column="20" selection-start-line="11" selection-start-column="20" selection-end-line="11" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/aiohttp_test.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="171">
+          <caret line="17" column="21" lean-forward="true" selection-start-line="17" selection-start-column="21" selection-end-line="17" selection-end-column="21" />
+          <folding>
+            <element signature="e#25#39#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
