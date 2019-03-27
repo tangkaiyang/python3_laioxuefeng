@@ -2,18 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="51f49763-80ec-4f41-9f9c-4922f493dd86" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/aiohttp_test.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/chapter19/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/chapter19/aiohttp.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/chapter19/asyncio.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/chapter19/asyncio_test.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/chapter19/coroutine_test.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/chapter19/web_connect_test.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/chapter19/协程.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/chapter19/异步IO.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/python3_laioxuefeng.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/python3_laioxuefeng.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/awesome-python3-webapp/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/awesome-python3-webapp/www/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/awesome-python3-webapp/www/app.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/awesome-python3-webapp/www/orm.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aiohttp_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/aiohttp_test.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -26,53 +20,20 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/chapter19/协程.txt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="309">
-              <caret line="31" column="32" selection-start-line="31" selection-start-column="32" selection-end-line="31" selection-end-column="32" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/chapter19/aiohttp.txt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="209">
-              <caret line="11" column="20" selection-start-line="11" selection-start-column="20" selection-end-line="11" selection-end-column="20" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/aiohttp_test.py">
+        <entry file="file://$PROJECT_DIR$/awesome-python3-webapp/www/app.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="171">
-              <caret line="17" column="21" lean-forward="true" selection-start-line="17" selection-start-column="21" selection-end-line="17" selection-end-column="21" />
-              <folding>
-                <element signature="e#25#39#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="114">
+              <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/chapter19/asyncio.txt">
+        <entry file="file://$PROJECT_DIR$/awesome-python3-webapp/www/orm.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="95">
-              <caret line="5" column="15" selection-start-line="5" selection-start-column="15" selection-end-line="5" selection-end-column="15" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/chapter19/asyncio_test.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="456">
-              <caret line="47" column="53" selection-start-line="47" selection-start-column="53" selection-end-line="47" selection-end-column="53" />
-              <folding>
-                <element signature="e#761#775#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="475">
+              <caret line="158" selection-start-line="158" selection-end-line="158" />
             </state>
           </provider>
         </entry>
@@ -94,8 +55,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/chapter13/psutil_test.py" />
-        <option value="$PROJECT_DIR$/chapter13/psutil.txt" />
         <option value="$PROJECT_DIR$/chapter13/virtualenv.txt" />
         <option value="$PROJECT_DIR$/chapter14/first_gui_app.py" />
         <option value="$PROJECT_DIR$/chapter14/图形界面" />
@@ -143,13 +102,15 @@
         <option value="$PROJECT_DIR$/chapter19/asyncio_test.py" />
         <option value="$PROJECT_DIR$/chapter19/web_connect_test.py" />
         <option value="$PROJECT_DIR$/chapter19/协程.txt" />
-        <option value="$PROJECT_DIR$/aiohttp_test.py" />
         <option value="$PROJECT_DIR$/chapter19/aiohttp.txt" />
+        <option value="$PROJECT_DIR$/aiohttp_test.py" />
+        <option value="$PROJECT_DIR$/awesome-python3-webapp/www/orm.py" />
+        <option value="$PROJECT_DIR$/awesome-python3-webapp/www/app.py" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="1">
-    <option name="x" value="832" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="823" />
     <option name="width" value="1097" />
     <option name="height" value="1038" />
   </component>
@@ -157,7 +118,36 @@
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
-    <panes />
+    <panes>
+      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="python3_laioxuefeng" type="b2602c69:ProjectViewProjectNode" />
+              <item name="python3_laioxuefeng" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="python3_laioxuefeng" type="b2602c69:ProjectViewProjectNode" />
+              <item name="python3_laioxuefeng" type="462c0819:PsiDirectoryNode" />
+              <item name="awesome-python3-webapp" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="python3_laioxuefeng" type="b2602c69:ProjectViewProjectNode" />
+              <item name="python3_laioxuefeng" type="462c0819:PsiDirectoryNode" />
+              <item name="awesome-python3-webapp" type="462c0819:PsiDirectoryNode" />
+              <item name="www" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="python3_laioxuefeng" type="b2602c69:ProjectViewProjectNode" />
+              <item name="python3_laioxuefeng" type="462c0819:PsiDirectoryNode" />
+              <item name="chapter19" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+    </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
@@ -181,7 +171,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.aiohttp_test">
+  <component name="RunManager" selected="Python.app (1)">
     <configuration name="python3_laioxuefeng" type="JupiterNotebook" factoryName="Jupyter Notebook">
       <module name="python3_laioxuefeng" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -220,7 +210,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="app" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="app (1)" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="python3_laioxuefeng" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -228,11 +218,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/chapter18" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/awesome-python3-webapp/www" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/chapter18/app.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/awesome-python3-webapp/www/app.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -306,19 +296,19 @@
     </configuration>
     <list>
       <item itemvalue="Jupyter Notebook.python3_laioxuefeng" />
-      <item itemvalue="Python.app" />
       <item itemvalue="Python.coroutine_test" />
       <item itemvalue="Python.asyncio_test" />
       <item itemvalue="Python.web_connect_test" />
       <item itemvalue="Python.aiohttp_test" />
+      <item itemvalue="Python.app (1)" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.app (1)" />
         <item itemvalue="Python.aiohttp_test" />
         <item itemvalue="Python.web_connect_test" />
         <item itemvalue="Python.asyncio_test" />
         <item itemvalue="Python.coroutine_test" />
-        <item itemvalue="Python.app" />
       </list>
     </recent_temporary>
   </component>
@@ -377,15 +367,14 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="832" y="0" width="1097" height="1038" extended-state="0" />
-    <editor active="true" />
+    <frame x="823" y="0" width="1097" height="1038" extended-state="0" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49943504" weight="0.24457034" />
       <window_info id="Structure" order="1" sideWeight="0.500565" side_tool="true" weight="0.2460094" />
       <window_info id="Favorites" order="2" side_tool="true" weight="0.32977587" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49583828" visible="true" weight="0.37790054" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49583828" weight="0.37790054" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.3943503" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -426,10 +415,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/chapter15/client_test.py" />
-    <entry file="file://$PROJECT_DIR$/chapter15/server_test.py" />
-    <entry file="file://$PROJECT_DIR$/chapter15/网络编程" />
-    <entry file="file://$PROJECT_DIR$/chapter15/udp_server.py" />
     <entry file="file://$PROJECT_DIR$/chapter15/udp_client.py" />
     <entry file="file://$PROJECT_DIR$/chapter15/UDP编程.txt" />
     <entry file="file://$PROJECT_DIR$/chapter16/电子邮件.txt" />
@@ -601,23 +586,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/chapter19/asyncio.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="95">
-          <caret line="5" column="15" selection-start-line="5" selection-start-column="15" selection-end-line="5" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/chapter19/asyncio_test.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="456">
-          <caret line="47" column="53" selection-start-line="47" selection-start-column="53" selection-end-line="47" selection-end-column="53" />
-          <folding>
-            <element signature="e#761#775#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/chapter19/coroutine_test.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="342">
@@ -648,8 +616,35 @@
     </entry>
     <entry file="file://D:/Python/Python37/Lib/site-packages/aiohttp/web_app.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2573">
-          <caret line="368" column="8" selection-start-line="368" selection-start-column="8" selection-end-line="368" selection-end-column="8" />
+        <state relative-caret-position="179">
+          <caret line="343" column="8" selection-start-line="343" selection-start-column="8" selection-end-line="343" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/chapter19/asyncio.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="95">
+          <caret line="5" column="15" selection-start-line="5" selection-start-column="15" selection-end-line="5" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/chapter19/asyncio_test.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="456">
+          <caret line="47" column="53" selection-start-line="47" selection-start-column="53" selection-end-line="47" selection-end-column="53" />
+          <folding>
+            <element signature="e#761#775#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/aiohttp_test.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="57">
+          <caret line="3" column="23" lean-forward="true" selection-start-line="3" selection-start-column="23" selection-end-line="3" selection-end-column="23" />
+          <folding>
+            <element signature="e#25#39#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -660,13 +655,31 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/aiohttp_test.py">
+    <entry file="file://D:/Python/Python37/Lib/logging/__init__.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="171">
-          <caret line="17" column="21" lean-forward="true" selection-start-line="17" selection-start-column="21" selection-end-line="17" selection-end-column="21" />
-          <folding>
-            <element signature="e#25#39#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="312">
+          <caret line="1790" column="39" lean-forward="true" selection-start-line="1790" selection-start-column="39" selection-end-line="1790" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/chapter07/MyORM.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="114">
+          <caret line="52" column="6" selection-start-line="52" selection-start-column="6" selection-end-line="52" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/awesome-python3-webapp/www/orm.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="475">
+          <caret line="158" selection-start-line="158" selection-end-line="158" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/awesome-python3-webapp/www/app.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="114">
+          <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
         </state>
       </provider>
     </entry>
