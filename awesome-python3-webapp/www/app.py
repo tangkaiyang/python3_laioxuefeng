@@ -1,6 +1,6 @@
 #  -*- coding:UTF-8 -*-
 
-import logging;
+import logging
 
 logging.basicConfig(level=logging.INFO)
 import asyncio, os, json, time
@@ -54,7 +54,7 @@ def init_jinja2(app, **kw):
     filters = kw.get('filters', None)
     if filters is not None:
         for name, f in filters.items():
-            env.filter[name] = f
+            env.filters[name] = f
     app['__templating__'] = env
 
 
@@ -168,9 +168,10 @@ async def init(loop):
     init_jinja2(app, filters=dict(datetime=datetime_filter))
     add_routes(app, 'handlers')
     add_static(app)
-    web.run_app(app, host='127.0.0.1', port=9000)
+    srv = await loop.create_server(app._make_handler(), '127.0.0.1', 9000)
+    # web.run_app(app, host='127.0.0.1', port=9000)
     logging.info('server started at http://127.0.0.1:9000...')
-
+    return srv
 
 loop = asyncio.get_event_loop()
 loop.run_until_complete(init(loop))

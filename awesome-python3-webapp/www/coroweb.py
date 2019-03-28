@@ -93,7 +93,7 @@ class RequestHandler():
 
     def __init__(self, app, fn):
         self._app = app
-        self._fn = fn
+        self._func = fn
         self._has_request_arg = has_request_arg(fn)
         self._has_var_kw_arg = has_var_kw_arg(fn)
         self._has_named_kw_args = has_named_kw_args(fn)

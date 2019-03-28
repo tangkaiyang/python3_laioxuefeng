@@ -7,8 +7,8 @@
 本地测试时不需要编写创建config_override.py
 """
 
-configs = {
-    'db': {
-        'host': '192.168.0.100'
-    }
-}
+# configs = {
+#     'db': {
+#         'host': '192.168.0.100'
+#     }
+# }
