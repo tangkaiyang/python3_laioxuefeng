@@ -33,6 +33,8 @@ async def index(request):
     #     '__template__': 'test.html',
     #     'users': users
     # }
+
+
 """
 Day9: 编写API
 Roy Fielding,2000,REST:Representational State Transfer,取代了SOAP,称为Web API的标准
@@ -42,7 +44,20 @@ REST就是一种设计API的模式.
 由于API就是把Web APP的功能全部封装了,
 所以,通过API操作数据,可以极大地把前端和后端的代码隔离,使得后端代码易于测试,前端代码编写更简单.
 """
+
+
 # 获取注册用户的API
 @get('/api/users')
-def api_get_users(*, page='1'):
-    page_index
+async def api_get_users():
+    users = await User.findAll(orderBy='created_at desc')
+    for u in users:
+        u.passwd = '******'
+    return dict(users=users)
+
+"""
+Day10: 用户注册和登录
+用户注册可以通过API实现:
+"""
+
+import re
+_RE_EMAIL = re.compile(r'^[a-z0-9\.\-\_]+\@[a-z0-9\-\_]+(\.[a-z0-9\-\_]_){1,4}$')

@@ -2,20 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="51f49763-80ec-4f41-9f9c-4922f493dd86" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/awesome_python3_webapp/www/apis.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/awesome_python3_webapp/www/config.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/awesome_python3_webapp/www/config_default.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/awesome_python3_webapp/www/config_override.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/awesome_python3_webapp/www/coroweb.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/awesome_python3_webapp/www/coroweb.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/awesome_python3_webapp/www/handlers.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/awesome_python3_webapp/www/templates/__base__.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/awesome_python3_webapp/www/templates/blogs.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/awesome_python3_webapp/www/templates/test.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/awesome_python3_webapp/www/app.py" beforeDir="false" afterPath="$PROJECT_DIR$/awesome_python3_webapp/www/app.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/awesome_python3_webapp/www/example.py" beforeDir="false" afterPath="$PROJECT_DIR$/awesome_python3_webapp/www/example.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/awesome_python3_webapp/www/orm.py" beforeDir="false" afterPath="$PROJECT_DIR$/awesome_python3_webapp/www/orm.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/awesome_python3_webapp/www/handlers.py" beforeDir="false" afterPath="$PROJECT_DIR$/awesome_python3_webapp/www/handlers.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -31,8 +18,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/awesome_python3_webapp/www/app.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="409">
-              <caret line="163" lean-forward="true" selection-start-line="163" selection-end-line="163" />
+            <state relative-caret-position="-57">
+              <caret line="137" column="20" lean-forward="true" selection-start-line="137" selection-start-column="20" selection-end-line="137" selection-end-column="20" />
             </state>
           </provider>
         </entry>
@@ -41,7 +28,7 @@
         <entry file="file://$PROJECT_DIR$/awesome_python3_webapp/www/handlers.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="741">
-              <caret line="47" column="14" selection-start-line="47" selection-start-column="14" selection-end-line="47" selection-end-column="14" />
+              <caret line="63" selection-start-line="63" selection-end-line="63" />
               <folding>
                 <element signature="e#184#240#0" expanded="true" />
               </folding>
@@ -52,8 +39,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/awesome_python3_webapp/www/templates/__base__.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1330">
-              <caret line="63" column="115" lean-forward="true" selection-start-line="63" selection-start-column="115" selection-end-line="63" selection-end-column="115" />
+            <state relative-caret-position="1197">
+              <caret line="63" column="115" selection-start-line="63" selection-start-column="115" selection-end-line="63" selection-end-column="115" />
               <folding>
                 <element signature="n#style#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="e#2995#3001#0" expanded="true" />
@@ -66,7 +53,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/awesome_python3_webapp/www/templates/blogs.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="665">
+            <state relative-caret-position="570">
               <caret line="30" column="14" selection-start-line="30" selection-start-column="14" selection-end-line="30" selection-end-column="14" />
             </state>
           </provider>
@@ -162,7 +149,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -192,6 +178,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -693,28 +680,24 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/awesome_python3_webapp/www/templates/test.html.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/awesome_python3_webapp/www/templates/__base__.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/awesome_python3_webapp/www/app.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="409">
-          <caret line="163" lean-forward="true" selection-start-line="163" selection-end-line="163" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/awesome_python3_webapp/www/templates/test.html.py" />
+    <entry file="file://$PROJECT_DIR$/awesome_python3_webapp/www/templates/__base__.py" />
     <entry file="file://$PROJECT_DIR$/awesome_python3_webapp/www/templates/__base__.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1330">
-          <caret line="63" column="115" lean-forward="true" selection-start-line="63" selection-start-column="115" selection-end-line="63" selection-end-column="115" />
+        <state relative-caret-position="1197">
+          <caret line="63" column="115" selection-start-line="63" selection-start-column="115" selection-end-line="63" selection-end-column="115" />
           <folding>
             <element signature="n#style#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="e#2995#3001#0" expanded="true" />
             <element signature="n#style#0;n#i#0;n#a#0;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/awesome_python3_webapp/www/templates/blogs.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="570">
+          <caret line="30" column="14" selection-start-line="30" selection-start-column="14" selection-end-line="30" selection-end-column="14" />
         </state>
       </provider>
     </entry>
@@ -725,17 +708,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/awesome_python3_webapp/www/templates/blogs.html">
+    <entry file="file://$PROJECT_DIR$/awesome_python3_webapp/www/app.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="665">
-          <caret line="30" column="14" selection-start-line="30" selection-start-column="14" selection-end-line="30" selection-end-column="14" />
+        <state relative-caret-position="-57">
+          <caret line="137" column="20" lean-forward="true" selection-start-line="137" selection-start-column="20" selection-end-line="137" selection-end-column="20" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/awesome_python3_webapp/www/handlers.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="741">
-          <caret line="47" column="14" selection-start-line="47" selection-start-column="14" selection-end-line="47" selection-end-column="14" />
+          <caret line="63" selection-start-line="63" selection-end-line="63" />
           <folding>
             <element signature="e#184#240#0" expanded="true" />
           </folding>
