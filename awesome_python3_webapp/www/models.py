@@ -6,7 +6,7 @@
 # @File     : models.py
 # @Software : PyCharm
 
-# 有了ORM,我们就可以把Web App需要的三个表用Model表示出来:
+# 创建网站应用需要的三个表user, blogs, comment
 import time, uuid
 
 from orm import Model, StringField, BooleanField, FloatField, TextField
@@ -38,25 +38,16 @@ class Blog(Model):
     name = StringField(ddl='varchar(50)')
     summary = StringField(ddl='varchar(200)')
     content = TextField()
-    created_at = FloatField(default=time.time)
+    create_at = FloatField(default=time.time)
 
 
 class Comment(Model):
     __table__ = 'comments'
 
-    id = StringField(primary_key=TextField, default=next_id, ddl='varchar(50)')
+    id = StringField(primary_key=True, default=next_id, ddl='varchar(50)')
     blog_id = StringField(ddl='varchar(50)')
     user_id = StringField(ddl='varchar(50)')
     user_name = StringField(ddl='varchar(50)')
     user_image = StringField(ddl='varchar(500)')
     content = TextField()
-    created_at = FloatField(default=time.time)
-
-
-"""
-在编写ORM时,给一个Field增加一个default参数可以让ORM自己填入缺省值.
-并且,缺省值可以作为函数对象传入,在调用save(时)自动计算.
-例如:主键id的缺省值是函数next_id,创建时间created_at的缺省值是函数time.time,可以自动设置当前日期和时间
-日期和时间用float类型存储在数据库中,而不是datetime类型,这么做的好处是不必关系数据库的时区以及时区转换问题,
-排序非常简单,显示的时候,只需要做一个float到str的转换
-"""
+    create_at = FloatField(default=time.time)
