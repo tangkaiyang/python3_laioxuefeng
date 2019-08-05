@@ -2,17 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e229c033-c297-4621-bb65-73050b20c32c" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/www/test.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/awesome_python3_webapp.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/awesome_python3_webapp.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dbnavigator.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dbnavigator.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/www/coroweb.py" beforeDir="false" afterPath="$PROJECT_DIR$/www/coroweb.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/www/coroweb.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/www/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/www/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/www/orm.py" beforeDir="false" afterPath="$PROJECT_DIR$/www/orm.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/app.py" beforeDir="false" afterPath="$PROJECT_DIR$/www/app.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -36,11 +27,14 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/www/app.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="114">
-              <caret line="9" column="4" selection-start-line="9" selection-start-column="4" selection-end-line="9" selection-end-column="4" />
+            <state relative-caret-position="582">
+              <caret line="95" column="10" selection-start-line="95" selection-start-column="10" selection-end-line="95" selection-end-column="10" />
+              <folding>
+                <element signature="e#550#564#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -48,7 +42,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/www/orm.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="127">
+            <state relative-caret-position="4332">
               <caret line="228" column="47" selection-start-line="228" selection-start-column="47" selection-end-line="228" selection-end-column="47" />
             </state>
           </provider>
@@ -57,7 +51,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/www/models.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="338">
+            <state relative-caret-position="475">
               <caret line="27" column="11" selection-start-line="27" selection-start-column="11" selection-end-line="27" selection-end-column="11" />
               <folding>
                 <element signature="e#196#213#0" expanded="true" />
@@ -69,20 +63,11 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/www/test.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="409">
-              <caret line="23" column="26" lean-forward="true" selection-start-line="23" selection-start-column="26" selection-end-line="23" selection-end-column="26" />
+            <state relative-caret-position="430">
+              <caret line="23" column="26" selection-start-line="23" selection-start-column="26" selection-end-line="23" selection-end-column="26" />
               <folding>
                 <element signature="e#158#172#0" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://D:/Anaconda3/Lib/logging/__init__.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="37582">
-              <caret line="1980" column="4" selection-start-line="1980" selection-start-column="4" selection-end-line="1980" selection-end-column="4" />
             </state>
           </provider>
         </entry>
@@ -98,11 +83,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/www/coroweb.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="582">
-              <caret line="196" column="20" selection-start-line="196" selection-start-column="20" selection-end-line="196" selection-end-column="20" />
+            <state relative-caret-position="-729">
+              <caret line="135" column="43" selection-start-line="135" selection-start-column="43" selection-end-line="135" selection-end-column="43" />
               <folding>
                 <element signature="e#228#237#0" expanded="true" />
               </folding>
@@ -135,11 +120,11 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/www/app.py" />
         <option value="$PROJECT_DIR$/www/test.py" />
         <option value="$PROJECT_DIR$/www/models.py" />
         <option value="$PROJECT_DIR$/www/orm.py" />
         <option value="$PROJECT_DIR$/www/coroweb.py" />
+        <option value="$PROJECT_DIR$/www/app.py" />
       </list>
     </option>
   </component>
@@ -155,6 +140,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -171,7 +157,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -258,12 +243,21 @@
       <updated>1563861393305</updated>
       <workItem from="1564731369589" duration="2586000" />
       <workItem from="1564793495034" duration="6903000" />
-      <workItem from="1564815338443" duration="6795000" />
+      <workItem from="1564815338443" duration="6925000" />
+      <workItem from="1564957782795" duration="5329000" />
     </task>
+    <task id="LOCAL-00001" summary="day 4">
+      <created>1564823820070</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1564823820070</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="16284000" />
+    <option name="totallyTimeSpent" value="21743000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -280,7 +274,7 @@
     <layout>
       <window_info id="Project Explorer" order="0" />
       <window_info id="Job Explorer" order="1" />
-      <window_info content_ui="combo" id="Project" order="2" sideWeight="0.49182764" visible="true" weight="0.17910448" />
+      <window_info active="true" content_ui="combo" id="Project" order="2" sideWeight="0.49182764" visible="true" weight="0.18070363" />
       <window_info id="Favorites" order="3" side_tool="true" />
       <window_info id="DB Browser" order="4" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -290,10 +284,10 @@
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32936078" />
-      <window_info anchor="bottom" id="Version Control" order="7" weight="0.32936078" />
+      <window_info anchor="bottom" id="Version Control" order="7" weight="0.32827735" />
       <window_info anchor="bottom" id="Terminal" order="8" weight="0.3286334" />
       <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.5010661" side_tool="true" weight="0.39262474" />
-      <window_info active="true" anchor="bottom" id="Python Console" order="10" sideWeight="0.4989339" visible="true" weight="0.27006507" />
+      <window_info anchor="bottom" id="Python Console" order="10" sideWeight="0.4989339" visible="true" weight="0.27006507" />
       <window_info anchor="bottom" id="DB Execution Console" order="11" />
       <window_info anchor="bottom" id="Docker" order="12" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" order="13" />
@@ -303,11 +297,55 @@
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="right" id="Database" order="3" weight="0.32942432" />
       <window_info anchor="right" id="SciView" order="4" weight="0.32942432" />
-      <window_info anchor="right" id="Structure" order="5" sideWeight="0.50817233" weight="0.17750533" />
+      <window_info anchor="right" id="Structure" order="5" sideWeight="0.50817233" visible="true" weight="0.17750533" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="RECENTLY_FILTERED_USER_GROUPS">
+                <collection />
+              </option>
+              <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+                <collection />
+              </option>
+              <option name="COLUMN_ORDER">
+                <list>
+                  <option value="0" />
+                  <option value="1" />
+                  <option value="2" />
+                  <option value="3" />
+                </list>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="RECENT_FILTERS">
+      <map>
+        <entry key="Branch">
+          <value>
+            <list />
+          </value>
+        </entry>
+        <entry key="User">
+          <value>
+            <list />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="day 4" />
+    <option name="LAST_COMMIT_MESSAGE" value="day 4" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/awesome_python3_webapp$test.coverage" NAME="test Coverage Results" MODIFIED="1564818782636" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/www" />
@@ -327,10 +365,41 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://D:/Anaconda3/Lib/logging/__init__.py">
+    <entry file="file://$PROJECT_DIR$/www/schema.sql">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="37582">
-          <caret line="1980" column="4" selection-start-line="1980" selection-start-column="4" selection-end-line="1980" selection-end-column="4" />
+        <state relative-caret-position="76">
+          <caret line="4" column="24" lean-forward="true" selection-end-line="46" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/e4872d4b-a73b-426f-bf2e-aeeeb1b819fd/console.sql">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/coroweb.txt" />
+    <entry file="file://D:/Anaconda3/Lib/urllib/__init__.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://D:/Anaconda3/Lib/asyncio/coroutines.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="214">
+          <caret line="159" column="4" selection-start-line="159" selection-start-column="4" selection-end-line="159" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/orm.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4332">
+          <caret line="228" column="47" selection-start-line="228" selection-start-column="47" selection-end-line="228" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="475">
+          <caret line="27" column="11" selection-start-line="27" selection-start-column="11" selection-end-line="27" selection-end-column="11" />
+          <folding>
+            <element signature="e#196#213#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -349,69 +418,60 @@
     <entry file="file://$PROJECT_DIR$/www/config.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/www/schema.sql">
+    <entry file="file://D:/Anaconda3/Lib/functools.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="76">
-          <caret line="4" column="24" lean-forward="true" selection-end-line="46" selection-end-column="37" />
+        <state relative-caret-position="196">
+          <caret line="66" column="4" selection-start-line="66" selection-start-column="4" selection-end-line="66" selection-end-column="4" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/e4872d4b-a73b-426f-bf2e-aeeeb1b819fd/console.sql">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/www/app.py">
+    <entry file="file://D:/Anaconda3/Lib/inspect.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="114">
-          <caret line="9" column="4" selection-start-line="9" selection-start-column="4" selection-end-line="9" selection-end-column="4" />
+        <state relative-caret-position="157">
+          <caret line="2456" column="19" lean-forward="true" selection-start-line="2456" selection-start-column="4" selection-end-line="2456" selection-end-column="19" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/www/models.py">
+    <entry file="file://D:/Anaconda3/Lib/urllib/parse.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="338">
-          <caret line="27" column="11" selection-start-line="27" selection-start-column="11" selection-end-line="27" selection-end-column="11" />
+        <state relative-caret-position="214">
+          <caret line="624" column="4" selection-start-line="624" selection-start-column="4" selection-end-line="624" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/coroweb.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-729">
+          <caret line="135" column="43" selection-start-line="135" selection-start-column="43" selection-end-line="135" selection-end-column="43" />
           <folding>
-            <element signature="e#196#213#0" expanded="true" />
+            <element signature="e#228#237#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/www/orm.py">
+    <entry file="file://D:/Anaconda3/Lib/logging/__init__.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="127">
-          <caret line="228" column="47" selection-start-line="228" selection-start-column="47" selection-end-line="228" selection-end-column="47" />
+        <state relative-caret-position="582">
+          <caret line="93" selection-start-line="93" selection-end-line="93" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/www/coroweb.txt">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/www/test.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="409">
-          <caret line="23" column="26" lean-forward="true" selection-start-line="23" selection-start-column="26" selection-end-line="23" selection-end-column="26" />
+        <state relative-caret-position="430">
+          <caret line="23" column="26" selection-start-line="23" selection-start-column="26" selection-end-line="23" selection-end-column="26" />
           <folding>
             <element signature="e#158#172#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://D:/Anaconda3/Lib/urllib/__init__.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://D:/Anaconda3/Lib/asyncio/coroutines.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="214">
-          <caret line="159" column="4" selection-start-line="159" selection-start-column="4" selection-end-line="159" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/www/coroweb.py">
+    <entry file="file://$PROJECT_DIR$/www/app.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="582">
-          <caret line="196" column="20" selection-start-line="196" selection-start-column="20" selection-end-line="196" selection-end-column="20" />
+          <caret line="95" column="10" selection-start-line="95" selection-start-column="10" selection-end-line="95" selection-end-column="10" />
           <folding>
-            <element signature="e#228#237#0" expanded="true" />
+            <element signature="e#550#564#0" expanded="true" />
           </folding>
         </state>
       </provider>
