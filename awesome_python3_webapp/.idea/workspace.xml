@@ -2,13 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e229c033-c297-4621-bb65-73050b20c32c" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/awesome_python3_webapp.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/awesome_python3_webapp.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/www/app.py" beforeDir="false" afterPath="$PROJECT_DIR$/www/app.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/www/handlers.py" beforeDir="false" afterPath="$PROJECT_DIR$/www/handlers.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/www/templates/test.html" beforeDir="false" afterPath="$PROJECT_DIR$/www/templates/test.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -32,11 +28,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/www/app.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="85">
-              <caret line="169" column="13" selection-start-line="169" selection-start-column="13" selection-end-line="173" selection-end-column="16" />
+            <state relative-caret-position="373">
+              <caret line="183" column="20" selection-start-line="183" selection-start-column="20" selection-end-line="183" selection-end-column="20" />
               <folding>
                 <element signature="e#550#564#0" expanded="true" />
               </folding>
@@ -45,19 +41,10 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/www/test.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="323">
-              <caret line="20" column="34" selection-start-line="20" selection-start-column="34" selection-end-line="20" selection-end-column="34" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/www/models.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="286">
-              <caret line="30" selection-start-line="30" selection-end-line="30" />
+            <state relative-caret-position="424">
+              <caret line="43" column="6" selection-start-line="43" selection-start-column="6" selection-end-line="43" selection-end-column="6" />
               <folding>
                 <element signature="e#196#213#0" expanded="true" />
               </folding>
@@ -68,8 +55,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/www/orm.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="318">
-              <caret line="38" column="32" lean-forward="true" selection-start-line="38" selection-start-column="32" selection-end-line="38" selection-end-column="32" />
+            <state relative-caret-position="722">
+              <caret line="38" column="32" selection-start-line="38" selection-start-column="32" selection-end-line="38" selection-end-column="32" />
             </state>
           </provider>
         </entry>
@@ -77,7 +64,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/www/coroweb.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="484">
+            <state relative-caret-position="3382">
               <caret line="188" selection-start-line="188" selection-end-line="188" />
               <folding>
                 <element signature="e#228#237#0" expanded="true" />
@@ -98,7 +85,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/www/apis.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="272">
+            <state relative-caret-position="855">
               <caret line="48" column="8" selection-start-line="48" selection-start-column="8" selection-end-line="48" selection-end-column="8" />
               <folding>
                 <element signature="e#159#170#0" expanded="true" />
@@ -107,11 +94,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/www/handlers.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="405">
-              <caret line="224" column="7" selection-start-line="224" selection-start-column="7" selection-end-line="224" selection-end-column="7" />
+            <state relative-caret-position="671">
+              <caret line="430" selection-start-line="430" selection-end-line="430" />
               <folding>
                 <element signature="e#199#208#0" expanded="true" />
               </folding>
@@ -122,8 +109,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/www/config.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="145">
-              <caret line="38" column="25" lean-forward="true" selection-start-line="38" selection-start-column="25" selection-end-line="38" selection-end-column="25" />
+            <state relative-caret-position="722">
+              <caret line="38" column="25" selection-start-line="38" selection-start-column="25" selection-end-line="38" selection-end-column="25" />
             </state>
           </provider>
         </entry>
@@ -143,6 +130,9 @@
       <find>found mapping</find>
       <find>mapping</find>
       <find>orm</find>
+      <find>logger</find>
+      <find>templat</find>
+      <find>midd</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -160,14 +150,15 @@
         <option value="$PROJECT_DIR$/www/coroweb.py" />
         <option value="$PROJECT_DIR$/www/test.py" />
         <option value="$PROJECT_DIR$/www/templates/test.html" />
-        <option value="$PROJECT_DIR$/www/app.py" />
         <option value="$PROJECT_DIR$/www/handlers.py" />
+        <option value="$PROJECT_DIR$/www/app.py" />
+        <option value="$PROJECT_DIR$/www/static/css/uikit.css" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="190" />
-    <option name="y" value="1" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="139" />
+    <option name="y" value="148" />
     <option name="width" value="1476" />
     <option name="height" value="1022" />
   </component>
@@ -177,7 +168,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -200,12 +190,35 @@
               <item name="awesome_python3_webapp" type="b2602c69:ProjectViewProjectNode" />
               <item name="awesome_python3_webapp" type="462c0819:PsiDirectoryNode" />
               <item name="www" type="462c0819:PsiDirectoryNode" />
+              <item name="static" type="462c0819:PsiDirectoryNode" />
+              <item name="css" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="awesome_python3_webapp" type="b2602c69:ProjectViewProjectNode" />
+              <item name="awesome_python3_webapp" type="462c0819:PsiDirectoryNode" />
+              <item name="www" type="462c0819:PsiDirectoryNode" />
+              <item name="static" type="462c0819:PsiDirectoryNode" />
+              <item name="css" type="462c0819:PsiDirectoryNode" />
+              <item name="addons" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="awesome_python3_webapp" type="b2602c69:ProjectViewProjectNode" />
+              <item name="awesome_python3_webapp" type="462c0819:PsiDirectoryNode" />
+              <item name="www" type="462c0819:PsiDirectoryNode" />
+              <item name="static" type="462c0819:PsiDirectoryNode" />
+              <item name="js" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="awesome_python3_webapp" type="b2602c69:ProjectViewProjectNode" />
+              <item name="awesome_python3_webapp" type="462c0819:PsiDirectoryNode" />
+              <item name="www" type="462c0819:PsiDirectoryNode" />
               <item name="templates" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -213,8 +226,14 @@
     <property name="DatabaseDriversLRU" value="mysql" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/www/static/js" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\PycharmProjects\python3_laioxuefeng\awesome_python3_webapp\www\static\js" />
+      <recent name="D:\PycharmProjects\python3_laioxuefeng\awesome_python3_webapp\www\static\css" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -364,7 +383,8 @@
       <workItem from="1564815338443" duration="6925000" />
       <workItem from="1564957782795" duration="5593000" />
       <workItem from="1564967953153" duration="14616000" />
-      <workItem from="1565004489134" duration="5064000" />
+      <workItem from="1565004489134" duration="5194000" />
+      <workItem from="1565044259176" duration="4625000" />
     </task>
     <task id="LOCAL-00001" summary="day 4">
       <created>1564823820070</created>
@@ -384,7 +404,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="41687000" />
+    <option name="totallyTimeSpent" value="46442000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -396,12 +416,12 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <frame x="139" y="148" width="1476" height="1022" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Project Explorer" order="0" />
       <window_info id="Job Explorer" order="1" />
-      <window_info content_ui="combo" id="Project" order="2" sideWeight="0.49182764" visible="true" weight="0.18443497" />
+      <window_info active="true" content_ui="combo" id="Project" order="2" sideWeight="0.49182764" visible="true" weight="0.24717514" />
       <window_info id="Favorites" order="3" side_tool="true" />
       <window_info id="DB Browser" order="4" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -414,7 +434,7 @@
       <window_info anchor="bottom" id="Version Control" order="7" weight="0.32719395" />
       <window_info anchor="bottom" id="Terminal" order="8" weight="0.32827735" />
       <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.5010661" side_tool="true" weight="0.39262474" />
-      <window_info active="true" anchor="bottom" id="Python Console" order="10" sideWeight="0.4989339" visible="true" weight="0.15292841" />
+      <window_info anchor="bottom" id="Python Console" order="10" sideWeight="0.4989339" visible="true" weight="0.15878378" />
       <window_info anchor="bottom" id="DB Execution Console" order="11" />
       <window_info anchor="bottom" id="Docker" order="12" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" order="13" />
@@ -424,7 +444,7 @@
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="right" id="Database" order="3" weight="0.32942432" />
       <window_info anchor="right" id="SciView" order="4" weight="0.32942432" />
-      <window_info anchor="right" id="Structure" order="5" sideWeight="0.50817233" visible="true" weight="0.17750533" />
+      <window_info anchor="right" id="Structure" order="5" sideWeight="0.50817233" visible="true" weight="0.23516949" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -556,16 +576,16 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/www/templates/test.html">
+    <entry file="file://$PROJECT_DIR$/www/orm.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="171">
-          <caret line="9" column="17" selection-start-line="9" selection-start-column="17" selection-end-line="9" selection-end-column="17" />
+        <state relative-caret-position="722">
+          <caret line="38" column="32" selection-start-line="38" selection-start-column="32" selection-end-line="38" selection-end-column="32" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/www/coroweb.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="484">
+        <state relative-caret-position="3382">
           <caret line="188" selection-start-line="188" selection-end-line="188" />
           <folding>
             <element signature="e#228#237#0" expanded="true" />
@@ -573,43 +593,16 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/www/app.py">
+    <entry file="file://$PROJECT_DIR$/www/templates/test.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="169" column="13" selection-start-line="169" selection-start-column="13" selection-end-line="173" selection-end-column="16" />
-          <folding>
-            <element signature="e#550#564#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/www/config.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="145">
-          <caret line="38" column="25" lean-forward="true" selection-start-line="38" selection-start-column="25" selection-end-line="38" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/www/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="286">
-          <caret line="30" selection-start-line="30" selection-end-line="30" />
-          <folding>
-            <element signature="e#196#213#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/www/orm.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="318">
-          <caret line="38" column="32" lean-forward="true" selection-start-line="38" selection-start-column="32" selection-end-line="38" selection-end-column="32" />
+        <state relative-caret-position="171">
+          <caret line="9" column="17" selection-start-line="9" selection-start-column="17" selection-end-line="9" selection-end-column="17" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/www/apis.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
+        <state relative-caret-position="855">
           <caret line="48" column="8" selection-start-line="48" selection-start-column="8" selection-end-line="48" selection-end-column="8" />
           <folding>
             <element signature="e#159#170#0" expanded="true" />
@@ -617,12 +610,49 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/www/config.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="722">
+          <caret line="38" column="25" selection-start-line="38" selection-start-column="25" selection-end-line="38" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="424">
+          <caret line="43" column="6" selection-start-line="43" selection-start-column="6" selection-end-line="43" selection-end-column="6" />
+          <folding>
+            <element signature="e#196#213#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/www/handlers.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="405">
-          <caret line="224" column="7" selection-start-line="224" selection-start-column="7" selection-end-line="224" selection-end-column="7" />
+        <state relative-caret-position="671">
+          <caret line="430" selection-start-line="430" selection-end-line="430" />
           <folding>
             <element signature="e#199#208#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/static/js/uikit.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/static/css/uikit.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="212">
+          <caret line="6586" column="3" selection-start-line="6586" selection-start-column="3" selection-end-line="6586" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/app.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="373">
+          <caret line="183" column="20" selection-start-line="183" selection-start-column="20" selection-end-line="183" selection-end-column="20" />
+          <folding>
+            <element signature="e#550#564#0" expanded="true" />
           </folding>
         </state>
       </provider>

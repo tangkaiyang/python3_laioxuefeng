@@ -45,6 +45,9 @@ from coroweb import add_routes, add_static
 
 logging.basicConfig(level=logging.INFO)
 
+# handlers是url处理函数
+from handlers import cookie2user, COOKIE_NAME
+
 
 ## 初始化jinja2的函数
 def init_jinja2(app, **kw):
@@ -79,7 +82,22 @@ async def logger_factory(app, handler):
     return logger
 
 
-# 认证处理工厂
+# 认证处理工厂-把当前用户绑定到request上,并对URL/manage/进行拦截,检查当前用户是否是管理员身份
+async def auth_factory(app, handler):
+    async def auth(request):
+        logging.info('check user: %s %s' % (request.method, request.path))
+        request.__user__ = None
+        cookie_str = request.cookies.get(COOKIE_NAME)
+        if cookie_str:
+            user = await cookie2user(cookie_str)
+            if user:
+                logging.info('set current user: %s' % user.email)
+                request.__user__ = user
+        if request.path.startswith('/manage/') and (request.__user__ is None or not request.__user__.admin):
+            return web.HTTPFound('/signin')
+        return await handler(request)
+
+    return auth
 
 
 # 数据处理工厂
@@ -122,7 +140,7 @@ async def response_factory(app, handler):
                 resp.content_type = 'application/json;charset=utf-8'
                 return resp
             else:
-                #
+                r['__user__'] = request.__user__
                 resp = web.Response(body=app['__templating__'].get_template(template).render(**r).encode('utf-8'))
                 resp.content_type = 'text/html;charset=utf-8'
                 return resp
@@ -161,7 +179,7 @@ async def init(loop):
     app = web.Application(loop=loop, middlewares=[
         logger_factory,
         response_factory,
-        # auth_factory,
+        auth_factory,
     ])
     init_jinja2(app, filters=dict(datetime=datetime_filter))
     add_routes(app, 'handlers')
@@ -175,6 +193,7 @@ async def init(loop):
     srv = await loop.create_server(app.make_handler(), '127.0.0.1', 9000)
     logging.info('server started at http://127.0.0.1:9000...')
     return srv
+
 
 loop = asyncio.get_event_loop()
 loop.run_until_complete(init(loop))
