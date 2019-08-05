@@ -7,14 +7,9 @@
 # @Software : PyCharm
 
 """
-优先从config_override.py中读取.
-简化读取配置文件,
-把所有配置读取统一到config.py
+优先从config_override.py读取
+所有配置读取到统一的config.py中,将之转化成可读的字典
 """
-"""
-Configuration
-"""
-
 import config_default
 
 
@@ -37,7 +32,7 @@ class Dict(dict):
     def __setattr__(self, key, value):
         self[key] = value
 
-
+# defaults与override合并,override覆盖
 def merge(defaults, override):
     r = {}
     for k, v in defaults.items():

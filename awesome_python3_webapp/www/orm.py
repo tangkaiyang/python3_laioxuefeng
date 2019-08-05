@@ -15,20 +15,21 @@ def log(sql, args=()):
 
 # 建立连接池
 async def create_pool(loop, **kwargs):
-    logging.info('create database connections pool......')
     global __pool
     __pool = await aiomysql.create_pool(
+        loop=loop,
         host=kwargs.get('host', 'localhost'),
         port=kwargs.get('port', 3306),
         user=kwargs['user'],
-        password=kwargs['password'],
+        password=kwargs['passwd'],
         db=kwargs['db'],
         charset=kwargs.get('charset', 'utf8'),
         autocommit=kwargs.get('autocommit', True),
         minsize=kwargs.get('minsize', 1),
         maxsize=kwargs.get('maxsize', 10),
-        loop=loop,
     )
+    logging.info('create database connections pool......')
+
 
 
 # SELECT, 用函数select执行传入SQL语句和SQL参数

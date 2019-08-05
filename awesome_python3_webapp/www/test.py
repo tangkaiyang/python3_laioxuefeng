@@ -13,8 +13,8 @@ from models import User, Blog, Comment
 
 
 async def test(loop):
-    await orm.create_pool(loop=loop, user='root', password='root', db='awesome')
-    u = User(name='Test', email='test@qq.com', passwd='123456', image='about:blank')
+    await orm.create_pool(loop=loop, user='root', passwd='root', db='awesome')
+    u = User(name='Test2', email='test1@qq.com', passwd='123456', image='about:blank')
     await u.save()
     # 添加到数据库后需要关闭连接池,否则报错
     orm.__pool.close()

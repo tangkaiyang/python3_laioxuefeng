@@ -75,7 +75,9 @@ async def logger_factory(app, handler):
     async def logger(request):
         logging.info('Request: %s %s' % (request.method, request.path))
         return await handler(request)
+
     return logger
+
 
 # 认证处理工厂
 
@@ -91,7 +93,9 @@ async def data_factory(app, handler):
                 request.__data__ = await request.post()
                 logging.info('request form: %s' % str(request.__data__))
         return await handler(request)
+
     return parse_data
+
 
 # 响应返回处理工厂
 async def response_factory(app, handler):
@@ -105,3 +109,73 @@ async def response_factory(app, handler):
             resp.content_type = 'application/octet-stream'
             return resp
         if isinstance(r, str):
+            if r.startswith('redirect:'):
+                return web.HTTPFound(r[9:])
+            resp = web.Response(body=r.encode('utf-8'))
+            resp.content_type = 'text/html;charset=utf-8'
+            return resp
+        if isinstance(r, dict):
+            template = r.get('__template__')
+            if template is None:
+                resp = web.Response(
+                    body=json.dumps(r, ensure_ascii=False, default=lambda o: o.__dict__).encode('utf-8'))
+                resp.content_type = 'application/json;charset=utf-8'
+                return resp
+            else:
+                #
+                resp = web.Response(body=app['__templating__'].get_template(template).render(**r).encode('utf-8'))
+                resp.content_type = 'text/html;charset=utf-8'
+                return resp
+        if isinstance(r, int) and 100 <= r < 600:
+            return web.Response(status=r)
+        if isinstance(r, tuple) and len(r) == 2:
+            t, m = r
+            if isinstance(t, int) and 100 <= m < 600:
+                return web.Response(status=t, body=str(m))
+        # default:
+        resp = web.Response(body=str(r).encode('utf-8'))
+        resp.content_type = 'text/plain;charset=utf-8'
+        return resp
+
+    return response
+
+
+# 时间转换
+def datetime_filter(t):
+    delta = time.time() - t
+    if delta < 60:
+        return u'1分钟前'
+    if delta < 3600:
+        return u'%s分钟前' % (delta // 60)
+    if delta < 86400:
+        return u'%s小时前' % (delta // 3600)
+    if delta < 604800:
+        return u'%s天前' % (delta // 86400)
+    dt = datetime.fromtimestamp(t)
+    return u'%s年%s月%s日' % (dt.year, dt.month, dt.day)
+
+
+async def init(loop):
+    await orm.create_pool(loop=loop, **configs.db)
+    #
+    app = web.Application(loop=loop, middlewares=[
+        logger_factory,
+        response_factory,
+        # auth_factory,
+    ])
+    init_jinja2(app, filters=dict(datetime=datetime_filter))
+    add_routes(app, 'handlers')
+    add_static(app)
+    # 有改动
+    # runner = web.AppRunner(app)
+    # await runner.setup()
+    # srv = web.TCPSite(runner, '127.0.0.1', 9000)
+    # logging.info('server started at http://127.0.0.1:9000...')
+    # return srv
+    srv = await loop.create_server(app.make_handler(), '127.0.0.1', 9000)
+    logging.info('server started at http://127.0.0.1:9000...')
+    return srv
+
+loop = asyncio.get_event_loop()
+loop.run_until_complete(init(loop))
+loop.run_forever()
