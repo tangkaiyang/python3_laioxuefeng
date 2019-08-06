@@ -214,7 +214,7 @@ def signout(request):
 
 
 # 获取管理页面
-@get('/manage')
+@get('/manage/')
 def manage():
     return 'redirect:/manage/comments'
 
